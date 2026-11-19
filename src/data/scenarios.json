@@ -1,0 +1,2571 @@
+[
+  {
+    "id": "taxi-anne-welcome",
+    "title": "Welcoming a guest who arrives by taxi at Anne",
+    "topicId": "airport-shuttle",
+    "grammarFocus": "Polite greetings; May I have…?; We will reimburse up to…; numbers and yen",
+    "summary": "Japan-site customers arrive by taxi at the Anne shop. Confirm the name/reservation, ask for the taxi receipt, and explain reimbursement up to ¥3,000.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Good afternoon. Welcome to ODAL Rent-a-Car at Anne. May I have your name and reservation, please?",
+        "hints": [
+          {
+            "word": "reservation",
+            "ja": "予約"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes. Tanaka Yuki. I came by taxi from the airport."
+      },
+      {
+        "speaker": "staff",
+        "text": "Thank you. May I have your taxi receipt? For Japan-site customers, we reimburse the taxi fare up to 3,000 yen.",
+        "hints": [
+          {
+            "word": "receipt",
+            "ja": "領収書"
+          },
+          {
+            "word": "reimburse",
+            "ja": "支給・返金（タクシー代）"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "Here it is. The fare was about 2,300 yen."
+      },
+      {
+        "speaker": "staff",
+        "text": "Perfect. We will reimburse up to 3,000 yen with this receipt. Please complete check-in here at Anne first."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "taxi-anne-welcome-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the reimbursement line.",
+        "sentence": "We will reimburse the taxi fare ___ to 3,000 yen.",
+        "blanks": [
+          "up"
+        ],
+        "explanation": "up to + amount = maximum reimbursement."
+      },
+      {
+        "id": "taxi-anne-welcome-mc",
+        "type": "multipleChoice",
+        "prompt": "Which arrival rule fits Japan-site customers?",
+        "choices": [
+          "Free inbound airport shuttle from stop 14",
+          "Taxi to the Anne shop; up to ¥3,000 reimbursed with a receipt",
+          "Walk from headquarters at Akamine with no receipt",
+          "Always unpaid taxi with no reimbursement"
+        ],
+        "correctIndex": 1,
+        "explanation": "Japan-site pages: taxi to Anne; up to ¥3,000 with receipt. Free stop-14 shuttle is for Korean-site (odal.co.kr) customers."
+      },
+      {
+        "id": "taxi-anne-welcome-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the polite request.",
+        "words": [
+          "May",
+          "I",
+          "have",
+          "your",
+          "taxi",
+          "receipt",
+          "please"
+        ],
+        "correctOrder": [
+          "May",
+          "I",
+          "have",
+          "your",
+          "taxi",
+          "receipt",
+          "please"
+        ],
+        "explanation": "May I have… please? is a polite counter request."
+      },
+      {
+        "id": "taxi-anne-welcome-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer staff line.",
+        "options": [
+          "Give money paper.",
+          "May I have your taxi receipt? We reimburse up to 3,000 yen."
+        ],
+        "correctIndex": 1,
+        "explanation": "Name the document and the exact yen limit."
+      }
+    ]
+  },
+  {
+    "id": "taxi-directions-anne",
+    "title": "Giving taxi-driver directions to Anne",
+    "topicId": "airport-shuttle",
+    "grammarFocus": "Imperatives and sequence words; prepositions; Please tell the driver…",
+    "summary": "Help a lost guest find Anne: Nakachi intersection toward Itoman, past Teruya Motors, then left. Or search Google Maps for かりゆしレンタル Anne / ODALレンタカー那覇空港店.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "I am in a taxi near the airport. How do I find your shop?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Please tell the driver: from Nakachi intersection, go straight about one kilometer toward Itoman. After Teruya Motors, turn left immediately.",
+        "hints": [
+          {
+            "word": "Please tell the driver",
+            "ja": "運転手さんにこう伝えてください"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "You can also search Google Maps for “かりゆしレンタル Anne” or “ODALレンタカー 那覇空港店.” Do not go to headquarters — pickup is not possible there.",
+        "hints": [
+          {
+            "word": "headquarters",
+            "ja": "本社"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "So I check in at Anne first?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Yes. Reception is at Anne, 208-2 Zayasu, SOUTH ZA I 1F. The car lot is nearby but separate."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "taxi-directions-anne-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the reported instruction.",
+        "sentence": "Please ___ the driver to turn left after Teruya Motors.",
+        "blanks": [
+          "tell"
+        ],
+        "explanation": "Please tell + person + to-infinitive for relaying directions."
+      },
+      {
+        "id": "taxi-directions-anne-mc",
+        "type": "multipleChoice",
+        "prompt": "Which search tip is correct?",
+        "choices": [
+          "Enter only the phone 098-851-4326 in car navi — it always shows Anne",
+          "Search Google Maps for ODALレンタカー那覇空港店; phone navi may show headquarters instead",
+          "Pickup is at headquarters in Akamine",
+          "There is no Anne office"
+        ],
+        "correctIndex": 1,
+        "explanation": "Japanese access page: phone in car navi can show HQ; pickup/return are not at headquarters."
+      },
+      {
+        "id": "taxi-directions-anne-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the sequence.",
+        "words": [
+          "Go",
+          "straight",
+          "toward",
+          "Itoman",
+          "then",
+          "turn",
+          "left"
+        ],
+        "correctOrder": [
+          "Go",
+          "straight",
+          "toward",
+          "Itoman",
+          "then",
+          "turn",
+          "left"
+        ],
+        "explanation": "Sequence words (then) keep multi-step directions clear."
+      },
+      {
+        "id": "taxi-directions-anne-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer help line.",
+        "options": [
+          "Somewhere left maybe.",
+          "Please search Google Maps for かりゆしレンタル Anne, then come to reception first."
+        ],
+        "correctIndex": 1,
+        "explanation": "Give a searchable place name and the first step (reception)."
+      }
+    ]
+  },
+  {
+    "id": "checkin-docs",
+    "title": "Check-in and documents (two guest types)",
+    "topicId": "counter-checkin",
+    "grammarFocus": "Could/would/please; I’m afraid we can’t…; must / have to",
+    "summary": "Japanese/resident guests: original driver’s license. Korean/foreign guests: IDP and home-country license as required. No license in hand means no insurance coverage.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Could you show me your driver’s license, please? Every driver must bring the original.",
+        "hints": [
+          {
+            "word": "driver’s license",
+            "ja": "運転免許証"
+          },
+          {
+            "word": "original",
+            "ja": "原本"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "I am visiting from Korea. I have an English-language Korean license."
+      },
+      {
+        "speaker": "staff",
+        "text": "For foreign visitors, please show your International Driving Permit and your home-country license. I’m afraid an English-language license alone is not enough.",
+        "hints": [
+          {
+            "word": "International Driving Permit",
+            "ja": "国際運転免許証"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "If you do not have the required license with you, insurance and coverage do not apply, and we cannot rent the car."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "checkin-docs-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the soft refusal.",
+        "sentence": "I’m afraid an English-language license alone is ___ enough.",
+        "blanks": [
+          "not"
+        ],
+        "explanation": "I’m afraid + negative softens a document refusal."
+      },
+      {
+        "id": "checkin-docs-mc",
+        "type": "multipleChoice",
+        "prompt": "What happens if the license is not in hand (Japan-site guide)?",
+        "choices": [
+          "Coverage still applies",
+          "Insurance and coverage do not apply",
+          "Only a 500 yen fee",
+          "Staff can invent a temporary permit"
+        ],
+        "correctIndex": 1,
+        "explanation": "Japanese booking guide: no license with them = insurance/coverage do not apply."
+      },
+      {
+        "id": "checkin-docs-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the polite request.",
+        "words": [
+          "Could",
+          "you",
+          "show",
+          "me",
+          "your",
+          "license",
+          "please"
+        ],
+        "correctOrder": [
+          "Could",
+          "you",
+          "show",
+          "me",
+          "your",
+          "license",
+          "please"
+        ],
+        "explanation": "Could you… please? is standard polite counter English."
+      },
+      {
+        "id": "checkin-docs-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the more polite line.",
+        "options": [
+          "License now.",
+          "Could you show me your original driver’s license, please?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Polite request + original clarifies the rule."
+      }
+    ]
+  },
+  {
+    "id": "forgot-idp",
+    "title": "The guest forgot the license or IDP",
+    "topicId": "counter-checkin",
+    "grammarFocus": "Conditionals; softening bad news",
+    "summary": "Without the required license/IDP, the car cannot be released. Do not mix cancellation tables — Japan-site vs Korean-site fees differ; confirm Japan-site percentages with a manager before quoting.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "I left my license at the hotel. Can I still rent today?"
+      },
+      {
+        "speaker": "staff",
+        "text": "I’m sorry. If you don’t have the required license with you, we cannot rent the car."
+      },
+      {
+        "speaker": "customer",
+        "text": "What about the cancellation fee?"
+      },
+      {
+        "speaker": "staff",
+        "text": "It depends on your booking channel. For Korean-site bookings, same-day cancel is 50% of the amount paid, up to 100,000 KRW. For Japan-site bookings, please wait — I need to confirm the fee table with a manager before I quote a percentage.",
+        "hints": [
+          {
+            "word": "cancellation fee",
+            "ja": "キャンセル料"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "On both channels, a flight cancelled by natural disaster can be fully refunded with the proper documents."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "forgot-idp-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the conditional.",
+        "sentence": "If you don’t have the license, we ___ rent the car.",
+        "blanks": [
+          "cannot"
+        ],
+        "explanation": "If + present, cannot + verb states a real consequence."
+      },
+      {
+        "id": "forgot-idp-mc",
+        "type": "multipleChoice",
+        "prompt": "How should staff handle Japan-site cancel fees in class dialogues?",
+        "choices": [
+          "Always quote 100% as proven fact with no caveat",
+          "Keep it general or say they must confirm with a manager before quoting",
+          "Use only the Korean 50% table for everyone",
+          "Say there is never a fee"
+        ],
+        "correctIndex": 1,
+        "explanation": "JA research flags wording overlap with Anne clothing; confirm with a manager before quoting."
+      },
+      {
+        "id": "forgot-idp-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the soft refusal.",
+        "words": [
+          "I’m",
+          "sorry",
+          "we",
+          "cannot",
+          "rent",
+          "the",
+          "car"
+        ],
+        "correctOrder": [
+          "I’m",
+          "sorry",
+          "we",
+          "cannot",
+          "rent",
+          "the",
+          "car"
+        ],
+        "explanation": "I’m sorry + clear result softens bad news."
+      },
+      {
+        "id": "forgot-idp-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the safer fee explanation.",
+        "options": [
+          "Japan cancel is definitely 100% forever, trust me.",
+          "For Japan-site bookings, let me confirm the cancellation table with a manager before I quote the fee."
+        ],
+        "correctIndex": 1,
+        "explanation": "Uncertain policies must not be stated as hard facts."
+      }
+    ]
+  },
+  {
+    "id": "additional-driver",
+    "title": "Registering an additional driver",
+    "topicId": "counter-checkin",
+    "grammarFocus": "can / may; anyone who will drive; present perfect",
+    "summary": "Every driver must be registered. On the Japanese guide, adding a driver on site requires the original or a copy of the license.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Can my husband drive too?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Yes. Anyone who will drive must be registered. You may add him now.",
+        "hints": [
+          {
+            "word": "additional driver",
+            "ja": "追加運転者"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "Have you both brought your licenses? For an on-site add, we need the original or a copy of his license."
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes — here is a copy."
+      },
+      {
+        "speaker": "staff",
+        "text": "Thank you. Unregistered drivers are not covered."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "additional-driver-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the present perfect question.",
+        "sentence": "___ you both brought your licenses?",
+        "blanks": [
+          "Have"
+        ],
+        "explanation": "Have you brought…? checks preparation before departure."
+      },
+      {
+        "id": "additional-driver-mc",
+        "type": "multipleChoice",
+        "prompt": "Which sentence is correct?",
+        "choices": [
+          "Anyone who will drive must be registered.",
+          "Anyone who will driving must be registered.",
+          "Anyone who drive must registered.",
+          "Anyone will drive must to register."
+        ],
+        "correctIndex": 0,
+        "explanation": "Relative clause + must + be registered."
+      },
+      {
+        "id": "additional-driver-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the permission line.",
+        "words": [
+          "You",
+          "may",
+          "add",
+          "him",
+          "as",
+          "a",
+          "driver",
+          "now"
+        ],
+        "correctOrder": [
+          "You",
+          "may",
+          "add",
+          "him",
+          "as",
+          "a",
+          "driver",
+          "now"
+        ],
+        "explanation": "may = polite permission."
+      },
+      {
+        "id": "additional-driver-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer staff line.",
+        "options": [
+          "Maybe he drive, whatever.",
+          "Yes — we can register him if he shows his license now."
+        ],
+        "correctIndex": 1,
+        "explanation": "State permission and the document condition together."
+      }
+    ]
+  },
+  {
+    "id": "insurance-noc",
+    "title": "Explaining insurance and NOC",
+    "topicId": "insurance-noc",
+    "grammarFocus": "Conditionals; passives; included vs not covered",
+    "summary": "Comprehensive insurance is included. NOC peace-of-mind plan is included (¥20,000 / ¥50,000 would-be fees). Quote exclusion fee ranges for the correct customer group.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Is insurance included? What is NOC?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Yes. Comprehensive automobile insurance is included. All ODAL customers are enrolled in the NOC peace-of-mind plan, so there is no self-pay for that loss-of-use fee when the plan applies.",
+        "hints": [
+          {
+            "word": "NOC",
+            "ja": "ノンオペレーションチャージ"
+          },
+          {
+            "word": "peace-of-mind plan",
+            "ja": "NOC安心プラン"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "If you have an accident and can drive back, that fee would normally be 20,000 yen. If a tow truck is needed, it would be 50,000 yen."
+      },
+      {
+        "speaker": "customer",
+        "text": "What if I put the wrong fuel in?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Wrong fuel is not covered. For Japan-site contracts, the billed range on our Japanese graphic is about 50,000 to 90,000 yen at actual cost. Korean-site pages list a higher maximum — I will confirm which contract you have before I quote a number."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "insurance-noc-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the passive.",
+        "sentence": "Comprehensive insurance ___ included in the rental fee.",
+        "blanks": [
+          "is"
+        ],
+        "explanation": "is included = already part of the rental."
+      },
+      {
+        "id": "insurance-noc-mc",
+        "type": "multipleChoice",
+        "prompt": "Japan-site wrong-fuel range on the official graphic?",
+        "choices": [
+          "¥50,000–¥90,000",
+          "Always exactly ¥150,000",
+          "Free",
+          "Only 1,000 KRW"
+        ],
+        "correctIndex": 0,
+        "explanation": "Japanese insurance graphic: wrong fuel ¥50,000–¥90,000. Do not mix with Korean-site maxima unless citing that group."
+      },
+      {
+        "id": "insurance-noc-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the NOC explanation.",
+        "words": [
+          "NOC",
+          "is",
+          "already",
+          "included",
+          "when",
+          "the",
+          "plan",
+          "applies"
+        ],
+        "correctOrder": [
+          "NOC",
+          "is",
+          "already",
+          "included",
+          "when",
+          "the",
+          "plan",
+          "applies"
+        ],
+        "explanation": "when the plan applies keeps the condition clear."
+      },
+      {
+        "id": "insurance-noc-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the safer explanation.",
+        "options": [
+          "Every fee is the same for every website forever.",
+          "NOC of 20,000 or 50,000 yen is already covered when the plan applies; exclusion ranges can differ by booking channel."
+        ],
+        "correctIndex": 1,
+        "explanation": "Shared NOC amounts; label group-specific exclusion ranges."
+      }
+    ]
+  },
+  {
+    "id": "child-seat",
+    "title": "Child seat for a child under 6",
+    "topicId": "free-items",
+    "grammarFocus": "must / have to / are required to; offers",
+    "summary": "Japanese law requires a child seat under 6. Free at ODAL. Covers are cleaned before every rental. Offer installation help.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Will any child under six ride with you?",
+        "hints": [
+          {
+            "word": "child seat",
+            "ja": "チャイルドシート"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes. Do we have to use a seat?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Yes. Children under six are required to use a child seat. Child seats are free, and the covers are cleaned before every rental."
+      },
+      {
+        "speaker": "staff",
+        "text": "Would you like me to help install it in a rear seat?"
+      }
+    ],
+    "exercises": [
+      {
+        "id": "child-seat-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the offer.",
+        "sentence": "Would you like me ___ help install it?",
+        "blanks": [
+          "to"
+        ],
+        "explanation": "Would you like me to + verb = polite offer."
+      },
+      {
+        "id": "child-seat-mc",
+        "type": "multipleChoice",
+        "prompt": "Which obligation sentence is correct?",
+        "choices": [
+          "Children under six must to use a child seat.",
+          "Children under six are required to use a child seat.",
+          "Children under six can required use a seat.",
+          "Children under six should required using a seat."
+        ],
+        "correctIndex": 1,
+        "explanation": "are required to + verb states legal obligation."
+      },
+      {
+        "id": "child-seat-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the free-item fact.",
+        "words": [
+          "Child",
+          "seats",
+          "are",
+          "free",
+          "at",
+          "ODAL"
+        ],
+        "correctOrder": [
+          "Child",
+          "seats",
+          "are",
+          "free",
+          "at",
+          "ODAL"
+        ],
+        "explanation": "Simple present states a standing offer."
+      },
+      {
+        "id": "child-seat-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the better offer.",
+        "options": [
+          "Install it yourself.",
+          "Would you like me to help install it?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Would you like…? sounds helpful."
+      }
+    ]
+  },
+  {
+    "id": "car-walkaround",
+    "title": "Car walk-around and existing damage",
+    "topicId": "car-inspection",
+    "grammarFocus": "let’s / shall we; there is/are; present perfect",
+    "summary": "Check scratches together before departure so existing damage is recorded.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Shall we walk around the car together before you leave?",
+        "hints": [
+          {
+            "word": "walk-around",
+            "ja": "車両の外観チェック"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "Sure. There is a small scratch on the rear bumper."
+      },
+      {
+        "speaker": "staff",
+        "text": "Thank you. Has this scratch already been recorded?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Let’s note it now so you are not charged later."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "car-walkaround-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the present perfect passive.",
+        "sentence": "Has this scratch already ___ recorded?",
+        "blanks": [
+          "been"
+        ],
+        "explanation": "Has … been recorded? checks completed action with present relevance."
+      },
+      {
+        "id": "car-walkaround-mc",
+        "type": "multipleChoice",
+        "prompt": "Choose the correct there is/are sentence.",
+        "choices": [
+          "There is two scratches on the door.",
+          "There is a small scratch on the rear bumper.",
+          "There are a scratch on the door.",
+          "There are small scratch on the bumper."
+        ],
+        "correctIndex": 1,
+        "explanation": "there is + singular noun."
+      },
+      {
+        "id": "car-walkaround-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the invitation.",
+        "words": [
+          "Shall",
+          "we",
+          "walk",
+          "around",
+          "the",
+          "car",
+          "together"
+        ],
+        "correctOrder": [
+          "Shall",
+          "we",
+          "walk",
+          "around",
+          "the",
+          "car",
+          "together"
+        ],
+        "explanation": "Shall we…? invites shared action."
+      },
+      {
+        "id": "car-walkaround-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the better invitation.",
+        "options": [
+          "Check fast.",
+          "Shall we walk around the car together before you leave?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Polite shared inspection builds trust."
+      }
+    ]
+  },
+  {
+    "id": "car-start-items",
+    "title": "How to start the car and free loan items",
+    "topicId": "free-items",
+    "grammarFocus": "Imperatives and sequencing; Make sure you…",
+    "summary": "Explain keys/lights and free items on the Japan-site list: phone charging stand, mini cooler and ice pack, sunshade, eco bag, sand-play set.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "First, take the keys. Then make sure the lights are off when you park. All cars are automatic.",
+        "hints": [
+          {
+            "word": "automatic",
+            "ja": "オートマチック"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "Inside you will find a phone charging stand, cables, a mini cooler with an ice pack, a sunshade, an eco bag, and a sand-play set.",
+        "hints": [
+          {
+            "word": "eco bag",
+            "ja": "エコバッグ"
+          },
+          {
+            "word": "ice pack",
+            "ja": "保冷剤"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "Do I need to reserve these?"
+      },
+      {
+        "speaker": "staff",
+        "text": "No. Please return them with the car."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "car-start-items-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the caution.",
+        "sentence": "Make sure you ___ the lights off when you park.",
+        "blanks": [
+          "turn"
+        ],
+        "explanation": "Make sure you + verb reminds an important step."
+      },
+      {
+        "id": "car-start-items-mc",
+        "type": "multipleChoice",
+        "prompt": "Which free item appears on the Japanese-site list?",
+        "choices": [
+          "Eco bag and ice pack",
+          "Unlimited prepaid ETC for every Japan-site car",
+          "Stroller rental guaranteed today",
+          "Cash envelope with 10,000 yen"
+        ],
+        "correctIndex": 0,
+        "explanation": "Japanese 5-merits graphic includes eco bag and ice pack; ETC is generally not provided on Japan-site cars."
+      },
+      {
+        "id": "car-start-items-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the sequence.",
+        "words": [
+          "First",
+          "take",
+          "the",
+          "keys",
+          "then",
+          "check",
+          "the",
+          "lights"
+        ],
+        "correctOrder": [
+          "First",
+          "take",
+          "the",
+          "keys",
+          "then",
+          "check",
+          "the",
+          "lights"
+        ],
+        "explanation": "First / then organize procedures."
+      },
+      {
+        "id": "car-start-items-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer instruction.",
+        "options": [
+          "Stuff in car somehow.",
+          "Please return the cooler, sunshade, eco bag, and sand set with the car."
+        ],
+        "correctIndex": 1,
+        "explanation": "Name the items guests must return."
+      }
+    ]
+  },
+  {
+    "id": "etc-by-contract",
+    "title": "ETC and highway tolls (split by contract)",
+    "topicId": "driving-tips",
+    "grammarFocus": "Instructions; should / shouldn’t; If you don’t have…",
+    "summary": "Japan-site: ETC usually not in the car — use your own card or a general lane; Okinawa expressway limit 80 km/h. Korean-site ODAL: free ETC + unlimited tolls; enter under 20 km/h. Do not mix.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Is there an ETC card in the car?"
+      },
+      {
+        "speaker": "staff",
+        "text": "It depends on your contract. For Japan-site rentals, an ETC card is generally not placed in the car. Please use your own card, or enter a general lane.",
+        "hints": [
+          {
+            "word": "general lane",
+            "ja": "一般レーン"
+          },
+          {
+            "word": "ETC card",
+            "ja": "ETCカード"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "On Okinawa expressways, the maximum speed is 80 kilometers per hour."
+      },
+      {
+        "speaker": "customer",
+        "text": "What about Korean-site ODAL bookings?"
+      },
+      {
+        "speaker": "staff",
+        "text": "For Korean-site ODAL customers, a free ETC card and unlimited Okinawa expressway tolls are included. Insert the card before you leave, and enter the ETC lane at 20 km/h or below."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "etc-by-contract-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the Japan-site advice.",
+        "sentence": "If you don’t have an ETC card, enter a ___ lane.",
+        "blanks": [
+          "general"
+        ],
+        "explanation": "general lane = non-ETC lane on the Japanese graphic."
+      },
+      {
+        "id": "etc-by-contract-mc",
+        "type": "multipleChoice",
+        "prompt": "Which statement is correct?",
+        "choices": [
+          "Japan-site and Korean-site ETC rules are identical",
+          "Japan-site: ETC usually not provided; Korean-site ODAL: free ETC and unlimited tolls",
+          "Nobody may use expressways",
+          "ETC is always cash only"
+        ],
+        "correctIndex": 1,
+        "explanation": "Major operational split — do not mix customer groups."
+      },
+      {
+        "id": "etc-by-contract-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the speed rule.",
+        "words": [
+          "The",
+          "expressway",
+          "limit",
+          "is",
+          "80",
+          "kilometers",
+          "per",
+          "hour"
+        ],
+        "correctOrder": [
+          "The",
+          "expressway",
+          "limit",
+          "is",
+          "80",
+          "kilometers",
+          "per",
+          "hour"
+        ],
+        "explanation": "Present simple for standing rules."
+      },
+      {
+        "id": "etc-by-contract-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the safer staff reply.",
+        "options": [
+          "Tolls are prepaid for everyone, always.",
+          "Let me check your booking channel — Japan-site and Korean-site ETC rules are different."
+        ],
+        "correctIndex": 1,
+        "explanation": "Confirm the contract before promising free tolls."
+      }
+    ]
+  },
+  {
+    "id": "driving-tips",
+    "title": "Driving advice (Maps, bus lanes, Kokusai-dori)",
+    "topicId": "driving-tips",
+    "grammarFocus": "should / I recommend; present simple for rules; time expressions",
+    "summary": "Recommend Google Maps and left-side driving. Warn about Route 58 bus lanes and the Sunday 12:00–18:00 vehicle ban on Kokusai-dori.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "I recommend that you use Google Maps. In Japan, we drive on the left.",
+        "hints": [
+          {
+            "word": "Google Maps",
+            "ja": "Googleマップ"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "Please watch bus lanes on Route 58 on weekday mornings and evenings. Driving in the bus lane during those hours is a violation."
+      },
+      {
+        "speaker": "staff",
+        "text": "On Kokusai-dori, general vehicles are banned every Sunday from 12:00 to 18:00. If your hotel is there, check parking access in advance.",
+        "hints": [
+          {
+            "word": "Kokusai-dori",
+            "ja": "国際通り"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "When should we pick up after landing?"
+      },
+      {
+        "speaker": "staff",
+        "text": "We recommend picking up one hour or more after your flight lands."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "driving-tips-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the recommendation.",
+        "sentence": "I recommend that you ___ Google Maps.",
+        "blanks": [
+          "use"
+        ],
+        "explanation": "I recommend that you + base verb."
+      },
+      {
+        "id": "driving-tips-mc",
+        "type": "multipleChoice",
+        "prompt": "Which Kokusai-dori rule is on the Japanese graphic?",
+        "choices": [
+          "Cars banned every Sunday 12:00–18:00 on the pedestrian zone section",
+          "Cars banned only at 03:00 Monday",
+          "No rules on Sundays",
+          "Only buses banned forever"
+        ],
+        "correctIndex": 0,
+        "explanation": "RP06: Sunday 12:00–18:00 general-vehicle ban on the pedestrian zone."
+      },
+      {
+        "id": "driving-tips-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the rule.",
+        "words": [
+          "In",
+          "Japan",
+          "we",
+          "drive",
+          "on",
+          "the",
+          "left"
+        ],
+        "correctOrder": [
+          "In",
+          "Japan",
+          "we",
+          "drive",
+          "on",
+          "the",
+          "left"
+        ],
+        "explanation": "Present simple for permanent rules."
+      },
+      {
+        "id": "driving-tips-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the better advice.",
+        "options": [
+          "Ignore bus lanes.",
+          "You should avoid the Route 58 bus lane during weekday rush hours."
+        ],
+        "correctIndex": 1,
+        "explanation": "should + clear time window."
+      }
+    ]
+  },
+  {
+    "id": "class-unavailable",
+    "title": "Booked class unavailable / offering another car",
+    "topicId": "special-situations",
+    "grammarFocus": "would you like; comparatives; I’m sorry, but…",
+    "summary": "Cars are assigned at random within the reserved class. Offer an alternative politely if stock requires a change.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "I’m sorry, but the exact model you hoped for is not available today."
+      },
+      {
+        "speaker": "customer",
+        "text": "I reserved a Sienta. Can I choose the color?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Cars are assigned at random within your reserved class. Specific color and options cannot be reserved. Would you like a similar wagon in the same class?",
+        "hints": [
+          {
+            "word": "car class",
+            "ja": "車両クラス"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "class-unavailable-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the soft apology.",
+        "sentence": "I’m sorry, ___ that model is not available today.",
+        "blanks": [
+          "but"
+        ],
+        "explanation": "I’m sorry, but… introduces bad news politely."
+      },
+      {
+        "id": "class-unavailable-mc",
+        "type": "multipleChoice",
+        "prompt": "How are vehicles assigned on the Japanese site?",
+        "choices": [
+          "Customer picks any VIN online",
+          "Assigned at random within the reserved class",
+          "Always Alphard regardless of booking",
+          "Only by color preference"
+        ],
+        "correctIndex": 1,
+        "explanation": "Japanese vehicle list: random assignment within class."
+      },
+      {
+        "id": "class-unavailable-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the offer.",
+        "words": [
+          "Would",
+          "you",
+          "like",
+          "a",
+          "similar",
+          "car",
+          "today"
+        ],
+        "correctOrder": [
+          "Would",
+          "you",
+          "like",
+          "a",
+          "similar",
+          "car",
+          "today"
+        ],
+        "explanation": "Would you like + noun = polite offer."
+      },
+      {
+        "id": "class-unavailable-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the more polite offer.",
+        "options": [
+          "Take this. No talk.",
+          "Would you like a similar car in the same class?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Offer a choice, not a command."
+      }
+    ]
+  },
+  {
+    "id": "fuel-policy",
+    "title": "Fuel policy at pickup or return",
+    "topicId": "fuel-return",
+    "grammarFocus": "if clauses; cash only / credit cards; recommendations",
+    "summary": "Return full with regular gasoline. Nearby stations include cash-only and closed-day limits. Not-full-tank surcharge details are Korean-site only — label if used.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Please return the car with a full tank of regular gasoline.",
+        "hints": [
+          {
+            "word": "full tank",
+            "ja": "満タン"
+          },
+          {
+            "word": "regular gasoline",
+            "ja": "レギュラー"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "Nearby, PB Irahá is cash only and closed on Sundays. Carenex Nakachi is closed on Tuesdays. Carenex Kanehide Ueda is open year-round."
+      },
+      {
+        "speaker": "customer",
+        "text": "What if the tank is not full?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Please fill it before return. A per-liter above-street charge is published on the Korean site for odal.co.kr customers — for Japan-site returns, follow the full-tank rule on our Japanese guide."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "fuel-policy-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the fuel type.",
+        "sentence": "Please return with a full tank of ___ gasoline.",
+        "blanks": [
+          "regular"
+        ],
+        "explanation": "regular gasoline = レギュラー on Japanese return graphics."
+      },
+      {
+        "id": "fuel-policy-mc",
+        "type": "multipleChoice",
+        "prompt": "Which station note is verified on the Japanese map?",
+        "choices": [
+          "PB Irahá is cash only and closed Sundays",
+          "Every station takes only Bitcoin",
+          "No stations exist near the shop",
+          "Diesel only for all cars"
+        ],
+        "correctIndex": 0,
+        "explanation": "Official gas-station map notes cash-only / closed days."
+      },
+      {
+        "id": "fuel-policy-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the instruction.",
+        "words": [
+          "Return",
+          "with",
+          "a",
+          "full",
+          "tank",
+          "of",
+          "regular"
+        ],
+        "correctOrder": [
+          "Return",
+          "with",
+          "a",
+          "full",
+          "tank",
+          "of",
+          "regular"
+        ],
+        "explanation": "Short imperative for return policy."
+      },
+      {
+        "id": "fuel-policy-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer warning.",
+        "options": [
+          "Fuel whatever.",
+          "This station is cash only and closed on Sundays — you can use another nearby station."
+        ],
+        "correctIndex": 1,
+        "explanation": "State the limit and offer an alternative."
+      }
+    ]
+  },
+  {
+    "id": "return-shuttle",
+    "title": "Return at the shop and the free shuttle",
+    "topicId": "fuel-return",
+    "grammarFocus": "Prepositions of time; Which stop would you like?",
+    "summary": "Return at the shop. Free shuttle 08:00–18:00 about every 15 minutes to airport or Akamine. Kokusai-dori 15:30/17:00 drops: Kenchomae, Miebashi Station, Makishi Park. Ask which stop.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Please return the car at the shop — not at the airport. We recommend returning at least two hours before your flight.",
+        "hints": [
+          {
+            "word": "return",
+            "ja": "返却"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "How do we get to the airport afterward?"
+      },
+      {
+        "speaker": "staff",
+        "text": "After return, a free shuttle runs from 08:00 to 18:00 about every 15 minutes to Naha Airport or Akamine Station."
+      },
+      {
+        "speaker": "staff",
+        "text": "For Kokusai-dori, shuttles leave at 15:30 and 17:00. Drop-offs are Kenchomae, Miebashi Station, and Makishi Park. Which stop would you like?",
+        "hints": [
+          {
+            "word": "Makishi Park",
+            "ja": "牧志公園前"
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "id": "return-shuttle-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the offer question.",
+        "sentence": "Which stop ___ you like?",
+        "blanks": [
+          "would"
+        ],
+        "explanation": "Which… would you like? offers a choice politely."
+      },
+      {
+        "id": "return-shuttle-mc",
+        "type": "multipleChoice",
+        "prompt": "Japan-site Kokusai-dori drop-offs?",
+        "choices": [
+          "Kenchomae, Miebashi Station, and Makishi Park",
+          "Only the cruise port",
+          "Only headquarters",
+          "No city drops exist"
+        ],
+        "correctIndex": 0,
+        "explanation": "Official Japanese graphic lists 県庁前 → 美栄橋駅前 → 牧志公園前. Korean site alone says 17:00 skips Makishi — label if teaching that exception."
+      },
+      {
+        "id": "return-shuttle-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the rule.",
+        "words": [
+          "You",
+          "cannot",
+          "leave",
+          "the",
+          "car",
+          "at",
+          "the",
+          "airport"
+        ],
+        "correctOrder": [
+          "You",
+          "cannot",
+          "leave",
+          "the",
+          "car",
+          "at",
+          "the",
+          "airport"
+        ],
+        "explanation": "cannot + base verb for a firm rule."
+      },
+      {
+        "id": "return-shuttle-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer shuttle line.",
+        "options": [
+          "Bus somewhere later.",
+          "The free shuttle runs about every 15 minutes to the airport or Akamine until 18:00."
+        ],
+        "correctIndex": 1,
+        "explanation": "Frequency + destinations + hours."
+      }
+    ]
+  },
+  {
+    "id": "early-flight",
+    "title": "Early-morning flight",
+    "topicId": "fuel-return",
+    "grammarFocus": "should / had better; by / before / the day before",
+    "summary": "Booking form: return 08:00–18:00; early-morning flights should be returned the day before. Aim for at least 2 hours before departure on flight day.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Our flight is at 09:40. Can we return at 07:00?"
+      },
+      {
+        "speaker": "staff",
+        "text": "I’m sorry. On our booking form, return is offered from 08:00 to 18:00. For early-morning flights, you should return the car the day before.",
+        "hints": [
+          {
+            "word": "early-morning flight",
+            "ja": "早朝便"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "On a normal flight day, please return at least two hours before departure."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "early-flight-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the advice.",
+        "sentence": "For early flights, you ___ return the day before.",
+        "blanks": [
+          "should"
+        ],
+        "explanation": "should + verb for strong practical advice."
+      },
+      {
+        "id": "early-flight-mc",
+        "type": "multipleChoice",
+        "prompt": "Which timing matches the Japanese booking form?",
+        "choices": [
+          "Return offered 08:00–18:00; early flights → day before",
+          "Return always at 05:00",
+          "Never return the day before",
+          "Return only after takeoff"
+        ],
+        "correctIndex": 0,
+        "explanation": "Japanese booking form guidance."
+      },
+      {
+        "id": "early-flight-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the rule.",
+        "words": [
+          "Return",
+          "at",
+          "least",
+          "two",
+          "hours",
+          "before",
+          "departure"
+        ],
+        "correctOrder": [
+          "Return",
+          "at",
+          "least",
+          "two",
+          "hours",
+          "before",
+          "departure"
+        ],
+        "explanation": "at least + time + before."
+      },
+      {
+        "id": "early-flight-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the stronger polite advice.",
+        "options": [
+          "Come whenever.",
+          "For a 09:40 flight, you had better return the day before."
+        ],
+        "correctIndex": 1,
+        "explanation": "had better for important timing advice."
+      }
+    ]
+  },
+  {
+    "id": "late-return",
+    "title": "Late return or extension",
+    "topicId": "fuel-return",
+    "grammarFocus": "may / might; as long as / unless; first conditionals",
+    "summary": "Unapproved overtime is not insured (Japanese graphic). “About one hour is usually fine” is Korean-site only — label it if used.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "We might be late. Is that OK?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Please call us if you need more time. If the car is used past the return time without approval, insurance and coverage do not apply.",
+        "hints": [
+          {
+            "word": "extension",
+            "ja": "延長"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "On Korean-site bookings, being under about one hour late is often described as usually fine without a call — that detail is from the Korean site, not the Japanese graphic."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "late-return-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the exclusion.",
+        "sentence": "___ approval, overtime use is not insured.",
+        "blanks": [
+          "Without"
+        ],
+        "explanation": "Without + noun states the missing condition."
+      },
+      {
+        "id": "late-return-mc",
+        "type": "multipleChoice",
+        "prompt": "Which statement is safest?",
+        "choices": [
+          "Quote a one-hour grace to every guest as a Japan-site fact",
+          "Teach unapproved overtime is not insured; label the one-hour grace as Korean-site only",
+          "Say overtime is always insured",
+          "Never allow phone calls"
+        ],
+        "correctIndex": 1,
+        "explanation": "Follow the label rule for KR-only grace detail."
+      },
+      {
+        "id": "late-return-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the warning.",
+        "words": [
+          "Please",
+          "call",
+          "us",
+          "if",
+          "you",
+          "need",
+          "more",
+          "time"
+        ],
+        "correctOrder": [
+          "Please",
+          "call",
+          "us",
+          "if",
+          "you",
+          "need",
+          "more",
+          "time"
+        ],
+        "explanation": "Please + imperative + if clause."
+      },
+      {
+        "id": "late-return-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer guidance.",
+        "options": [
+          "Late forever OK.",
+          "Please call if you will be late — unapproved overtime is not insured."
+        ],
+        "correctIndex": 1,
+        "explanation": "Action + insurance consequence."
+      }
+    ]
+  },
+  {
+    "id": "accident-call",
+    "title": "Accident call, even a small scratch",
+    "topicId": "accidents",
+    "grammarFocus": "Urgent imperatives; must / mustn’t; even if; reported speech",
+    "summary": "Aid injured (119), call 110, collect other-party details, fill the accident report form, call ODAL. No police report = no insurance. Do not settle privately.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "I hit a pole. It is only a small scratch."
+      },
+      {
+        "speaker": "staff",
+        "text": "Please do not leave the scene, and do not settle privately. If anyone is hurt, call 119 first.",
+        "hints": [
+          {
+            "word": "accident report form",
+            "ja": "事故報告書"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "You must call the police on 110 even for a small accident. No police report means insurance does not apply."
+      },
+      {
+        "speaker": "staff",
+        "text": "Write the other party’s name, address, contact, plate number, and insurer on the accident report form. Then call ODAL."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "accident-call-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the prohibition.",
+        "sentence": "Please do ___ settle privately.",
+        "blanks": [
+          "not"
+        ],
+        "explanation": "do not + verb for urgent prohibition."
+      },
+      {
+        "id": "accident-call-mc",
+        "type": "multipleChoice",
+        "prompt": "Which step is required even for a small accident?",
+        "choices": [
+          "Skip the police if the scratch is small",
+          "Call 110; no police report means no insurance",
+          "Only email next month",
+          "Delete photos"
+        ],
+        "correctIndex": 1,
+        "explanation": "Japanese accident manual: call police even for small accidents."
+      },
+      {
+        "id": "accident-call-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the urgent steps.",
+        "words": [
+          "Call",
+          "110",
+          "then",
+          "call",
+          "ODAL"
+        ],
+        "correctOrder": [
+          "Call",
+          "110",
+          "then",
+          "call",
+          "ODAL"
+        ],
+        "explanation": "Short imperatives in emergencies."
+      },
+      {
+        "id": "accident-call-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the safer reply.",
+        "options": [
+          "Small scratch? Just go.",
+          "Even for a small scratch, you must call 110 and then ODAL."
+        ],
+        "correctIndex": 1,
+        "explanation": "Insurance depends on proper reporting."
+      }
+    ]
+  },
+  {
+    "id": "afterhours-accident",
+    "title": "After-hours accident or replacement car",
+    "topicId": "accidents",
+    "grammarFocus": "will / may / can; If we are closed…; polite apology",
+    "summary": "Japan-site accident desk 070-3801-8558, 09:00–18:00. After hours: call the insurer (named at pickup), then ODAL the next day. Replacement timing/fees: Korean-site details — label if used.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "It is 10 p.m. and we had an accident. Can I call ODAL now?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Our accident desk is 070-3801-8558 from 09:00 to 18:00. If we are closed, please call the insurance company explained at pickup, then contact ODAL the next day.",
+        "hints": [
+          {
+            "word": "accident desk",
+            "ja": "事故受付窓口"
+          },
+          {
+            "word": "insurance company",
+            "ja": "保険会社"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "Can we get a replacement car?"
+      },
+      {
+        "speaker": "staff",
+        "text": "We can discuss a replacement during business hours. Detailed dispatch timing and second-dispatch regional fees are published on the Korean site — I will confirm what applies to your contract."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "afterhours-accident-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the hours.",
+        "sentence": "The accident desk is open from 09:00 ___ 18:00.",
+        "blanks": [
+          "to"
+        ],
+        "explanation": "from … to … for office hours."
+      },
+      {
+        "id": "afterhours-accident-mc",
+        "type": "multipleChoice",
+        "prompt": "After-hours path on the Japanese manual?",
+        "choices": [
+          "Call insurer first; contact ODAL the next day",
+          "Only wait one week with no calls",
+          "Call Korean 24-hour line as the only Japan-site option",
+          "Settle privately"
+        ],
+        "correctIndex": 0,
+        "explanation": "JA manual: after hours → insurer, then ODAL next day. 24-hour Korean support is for odal.co.kr customers."
+      },
+      {
+        "id": "afterhours-accident-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the after-hours advice.",
+        "words": [
+          "If",
+          "we",
+          "are",
+          "closed",
+          "call",
+          "the",
+          "insurer",
+          "first"
+        ],
+        "correctOrder": [
+          "If",
+          "we",
+          "are",
+          "closed",
+          "call",
+          "the",
+          "insurer",
+          "first"
+        ],
+        "explanation": "If + present, imperative result."
+      },
+      {
+        "id": "afterhours-accident-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer line.",
+        "options": [
+          "Call anyone maybe.",
+          "If we are closed, call the insurer given at pickup, then call ODAL tomorrow."
+        ],
+        "correctIndex": 1,
+        "explanation": "Clear after-hours sequence."
+      }
+    ]
+  },
+  {
+    "id": "accident-interpreting",
+    "title": "Accident support with interpreting",
+    "topicId": "accidents",
+    "grammarFocus": "Offering help; calm reassurance; explaining steps in order",
+    "summary": "Staff may go to the scene, interpret with police, and accompany an injured guest to the hospital — especially for Korean or other non-Japanese guests.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "I am scared. The other driver only speaks Japanese."
+      },
+      {
+        "speaker": "staff",
+        "text": "You don’t need to worry. I can come to the scene, and I can interpret for you with the police.",
+        "hints": [
+          {
+            "word": "interpret",
+            "ja": "通訳"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "First stay safe. Then wait for the police. After that, we will follow the insurance steps together."
+      },
+      {
+        "speaker": "staff",
+        "text": "If someone is injured, I can accompany you to the hospital."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "accident-interpreting-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the offer.",
+        "sentence": "I can ___ for you with the police.",
+        "blanks": [
+          "interpret"
+        ],
+        "explanation": "can + verb offers ability/help."
+      },
+      {
+        "id": "accident-interpreting-mc",
+        "type": "multipleChoice",
+        "prompt": "Which staff support is described in ODAL job posts?",
+        "choices": [
+          "Staff may go to the scene and interpret",
+          "Staff never leave the office",
+          "Only email support next year",
+          "No hospital accompaniment ever"
+        ],
+        "correctIndex": 0,
+        "explanation": "Recruit/job ads: scene support, interpreting, hospital accompaniment."
+      },
+      {
+        "id": "accident-interpreting-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the calm steps.",
+        "words": [
+          "First",
+          "stay",
+          "safe",
+          "then",
+          "wait",
+          "for",
+          "the",
+          "police"
+        ],
+        "correctOrder": [
+          "First",
+          "stay",
+          "safe",
+          "then",
+          "wait",
+          "for",
+          "the",
+          "police"
+        ],
+        "explanation": "First / then keeps emergency English orderly."
+      },
+      {
+        "id": "accident-interpreting-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the calmer offer.",
+        "options": [
+          "Not my job. Bye.",
+          "I can come to the scene and interpret for you."
+        ],
+        "correctIndex": 1,
+        "explanation": "Offer concrete help."
+      }
+    ]
+  },
+  {
+    "id": "smoking-pets",
+    "title": "Smoking, e-cigarettes, pets, or a dirty/wet seat",
+    "topicId": "special-situations",
+    "grammarFocus": "must not / cannot; that’s not allowed; if + consequence",
+    "summary": "All cars non-smoking including e-cigarettes. Japan-site vomit/water-play fee ranges. Pets-not-allowed and smoking yen fee: Korean-site unless confirmed for Japan-site.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Can I use an e-cigarette in the car? Also, can our dog ride?"
+      },
+      {
+        "speaker": "staff",
+        "text": "I’m sorry, that’s not allowed. All cars are non-smoking, including e-cigarettes.",
+        "hints": [
+          {
+            "word": "e-cigarette",
+            "ja": "電子タバコ"
+          },
+          {
+            "word": "non-smoking",
+            "ja": "禁煙車両"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "Pets are not allowed on the Korean-site FAQ; please do not bring pets unless a manager confirms an exception for your contract."
+      },
+      {
+        "speaker": "staff",
+        "text": "If a seat is wet from water play, the Japan-site range is about 20,000 to 30,000 yen at actual cost. Vomit soiling is about 30,000 to 50,000 yen."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "smoking-pets-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the rule.",
+        "sentence": "E-cigarettes ___ allowed in the car.",
+        "blanks": [
+          "are not"
+        ],
+        "explanation": "are not allowed = prohibition."
+      },
+      {
+        "id": "smoking-pets-mc",
+        "type": "multipleChoice",
+        "prompt": "Japan-site water-play seat fee range?",
+        "choices": [
+          "About ¥20,000–¥30,000 at actual cost",
+          "Always ¥150,000 flat",
+          "Free",
+          "Only KRW billing"
+        ],
+        "correctIndex": 0,
+        "explanation": "Japanese insurance graphic ranges."
+      },
+      {
+        "id": "smoking-pets-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the refusal.",
+        "words": [
+          "I’m",
+          "sorry",
+          "that’s",
+          "not",
+          "allowed"
+        ],
+        "correctOrder": [
+          "I’m",
+          "sorry",
+          "that’s",
+          "not",
+          "allowed"
+        ],
+        "explanation": "Short polite refusal formula."
+      },
+      {
+        "id": "smoking-pets-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the firmer polite refusal.",
+        "options": [
+          "E-cig OK if window open.",
+          "I’m sorry — e-cigarettes are not allowed in our non-smoking cars."
+        ],
+        "correctIndex": 1,
+        "explanation": "Warm but firm."
+      }
+    ]
+  },
+  {
+    "id": "cancel-change",
+    "title": "Changing or cancelling a booking",
+    "topicId": "cancellations",
+    "grammarFocus": "Comparatives; percentages; as long as",
+    "summary": "Branch by channel. Japan-site guide shows a different table than Korean-site ODAL — confirm Japan-site percentages with a manager before quoting. Disaster-cancelled flights: full refund on both.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Can I change my return date?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Yes — please use My Page or contact us. The exact free-change window depends on your booking channel.",
+        "hints": [
+          {
+            "word": "change",
+            "ja": "予約変更"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "What if I cancel today?"
+      },
+      {
+        "speaker": "staff",
+        "text": "For Korean-site ODAL bookings, cancel up to one day before is a full refund; same-day is 50% of the amount paid, up to 100,000 KRW."
+      },
+      {
+        "speaker": "staff",
+        "text": "For Japan-site bookings, our guide shows a different table. Before I quote a percentage, I need to confirm with a manager. On both channels, a flight cancelled by natural disaster can be fully refunded."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "cancel-change-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the caution.",
+        "sentence": "Before I quote a Japan-site fee, I need to ___ with a manager.",
+        "blanks": [
+          "confirm"
+        ],
+        "explanation": "need to + verb for required check."
+      },
+      {
+        "id": "cancel-change-mc",
+        "type": "multipleChoice",
+        "prompt": "Which approach is correct?",
+        "choices": [
+          "Mix JA and KR cancel tables into one number",
+          "Do not mix tables; confirm JA guide figures with a manager before quoting",
+          "Always use clothing-rental fees only",
+          "Say cancel is always free for same-day"
+        ],
+        "correctIndex": 1,
+        "explanation": "Research rule: do not mix; JA table has a confirmation caveat."
+      },
+      {
+        "id": "cancel-change-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the shared disaster rule.",
+        "words": [
+          "A",
+          "disaster-cancelled",
+          "flight",
+          "can",
+          "be",
+          "fully",
+          "refunded"
+        ],
+        "correctOrder": [
+          "A",
+          "disaster-cancelled",
+          "flight",
+          "can",
+          "be",
+          "fully",
+          "refunded"
+        ],
+        "explanation": "can be + past participle for possibility."
+      },
+      {
+        "id": "cancel-change-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the safer reply.",
+        "options": [
+          "Japan cancel is 100% forever, no need to check.",
+          "Korean-site and Japan-site cancellation tables differ — let me confirm yours."
+        ],
+        "correctIndex": 1,
+        "explanation": "Branch by customer group."
+      }
+    ]
+  },
+  {
+    "id": "typhoon-delay",
+    "title": "Typhoon or delayed flight",
+    "topicId": "cancellations",
+    "grammarFocus": "First conditionals; in case / if; polite reassurance",
+    "summary": "Cancelled flight can be refunded. Delayed arrivals may need flexible pickup. Mid-rental free extension details: Korean-site — label if used.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Our flight may be cancelled because of a typhoon.",
+        "hints": [
+          {
+            "word": "typhoon",
+            "ja": "台風"
+          },
+          {
+            "word": "cancelled flight",
+            "ja": "欠航"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "You don’t need to worry. If the airline cancels the flight because of a natural disaster, the rental can be fully refunded."
+      },
+      {
+        "speaker": "customer",
+        "text": "And if we are only delayed?"
+      },
+      {
+        "speaker": "staff",
+        "text": "If your arrival is delayed, please tell us the new time when you can. Shuttle overtime is often caused by late flights, so updates help us plan."
+      },
+      {
+        "speaker": "staff",
+        "text": "Detailed mid-rental free extension rules for typhoons are on the Korean site — I will confirm whether they apply to your booking."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "typhoon-delay-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the reassurance.",
+        "sentence": "You don’t need ___ worry.",
+        "blanks": [
+          "to"
+        ],
+        "explanation": "don’t need to + verb reassures politely."
+      },
+      {
+        "id": "typhoon-delay-mc",
+        "type": "multipleChoice",
+        "prompt": "Which conditional matches disaster refunds?",
+        "choices": [
+          "If a natural disaster cancels the flight, a full refund is possible",
+          "If delayed 5 minutes, insurance ends",
+          "If typhoon, cash only at HQ",
+          "If sunny, cancel fees double"
+        ],
+        "correctIndex": 0,
+        "explanation": "Both channels: disaster-cancelled flight → full refund path."
+      },
+      {
+        "id": "typhoon-delay-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the request.",
+        "words": [
+          "Please",
+          "tell",
+          "us",
+          "your",
+          "new",
+          "arrival",
+          "time"
+        ],
+        "correctOrder": [
+          "Please",
+          "tell",
+          "us",
+          "your",
+          "new",
+          "arrival",
+          "time"
+        ],
+        "explanation": "Please tell us + noun phrase."
+      },
+      {
+        "id": "typhoon-delay-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the calmer reply.",
+        "options": [
+          "Typhoon! Nothing we can do.",
+          "You don’t need to worry — if the flight is cancelled by a natural disaster, we can process a full refund."
+        ],
+        "correctIndex": 1,
+        "explanation": "Reassure + condition."
+      }
+    ]
+  },
+  {
+    "id": "main-driver-to-lot",
+    "title": "Guiding only the representative driver to the car lot",
+    "topicId": "counter-checkin",
+    "grammarFocus": "Only the main driver…; two-step process; short directions",
+    "summary": "Japan-site flow: check in at Anne first; only the representative driver goes to the nearby car lot. Reception and lot are easy to confuse.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Please complete check-in here at Anne first. The cars are at a nearby lot, not inside this office.",
+        "hints": [
+          {
+            "word": "representative driver",
+            "ja": "運転代表者"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "Only the main driver should come with me to the car lot. Other passengers can wait here."
+      },
+      {
+        "speaker": "customer",
+        "text": "I almost went to the wrong building."
+      },
+      {
+        "speaker": "staff",
+        "text": "That happens often. Please follow me — it is a short walk to the ODAL lot."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "main-driver-to-lot-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the instruction.",
+        "sentence": "___ the main driver should come to the car lot.",
+        "blanks": [
+          "Only"
+        ],
+        "explanation": "Only + noun limits who joins."
+      },
+      {
+        "id": "main-driver-to-lot-mc",
+        "type": "multipleChoice",
+        "prompt": "Japan-site check-in flow?",
+        "choices": [
+          "Everyone drives straight into a random garage with no Anne stop",
+          "Check in at Anne first; only the representative driver goes to the lot",
+          "Pickup only at headquarters",
+          "No check-in needed"
+        ],
+        "correctIndex": 1,
+        "explanation": "Japanese store-intro: Anne reception, then main driver to lot."
+      },
+      {
+        "id": "main-driver-to-lot-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the two-step line.",
+        "words": [
+          "First",
+          "check",
+          "in",
+          "at",
+          "Anne",
+          "then",
+          "go",
+          "to",
+          "the",
+          "lot"
+        ],
+        "correctOrder": [
+          "First",
+          "check",
+          "in",
+          "at",
+          "Anne",
+          "then",
+          "go",
+          "to",
+          "the",
+          "lot"
+        ],
+        "explanation": "First / then for a two-step process."
+      },
+      {
+        "id": "main-driver-to-lot-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer guide line.",
+        "options": [
+          "Car somewhere. Bye.",
+          "Please follow me — only the main driver comes to the lot."
+        ],
+        "correctIndex": 1,
+        "explanation": "Who + where in one clear sentence."
+      }
+    ]
+  },
+  {
+    "id": "kariyushi-tryon",
+    "title": "Offering a kariyushi try-on during paperwork",
+    "topicId": "special-situations",
+    "grammarFocus": "Offers; at the same time; after / before",
+    "summary": "Optional kariyushi try-on at Anne while the representative driver does rental paperwork. Return clothes at Anne before returning the car.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Would you like to try on kariyushi wear while we complete the rental paperwork?",
+        "hints": [
+          {
+            "word": "at the same time",
+            "ja": "同時に"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes — can my family try clothes while I do the car papers?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Yes. At the same time, the main driver can finish the rental papers here, and others can try on clothes at Anne."
+      },
+      {
+        "speaker": "staff",
+        "text": "Please return the kariyushi at Anne before you return the car."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "kariyushi-tryon-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the offer.",
+        "sentence": "Would you like to try kariyushi ___ we finish the paperwork?",
+        "blanks": [
+          "while"
+        ],
+        "explanation": "while + clause for simultaneous actions."
+      },
+      {
+        "id": "kariyushi-tryon-mc",
+        "type": "multipleChoice",
+        "prompt": "Where are kariyushi pickup/return?",
+        "choices": [
+          "At Anne, not at the car lot",
+          "Only at the airport curb",
+          "Only at headquarters warehouse",
+          "Inside the trunk of every car"
+        ],
+        "correctIndex": 0,
+        "explanation": "RP07: kariyushi at Anne; car lot is separate."
+      },
+      {
+        "id": "kariyushi-tryon-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the return rule.",
+        "words": [
+          "Return",
+          "the",
+          "clothes",
+          "at",
+          "Anne",
+          "before",
+          "the",
+          "car"
+        ],
+        "correctOrder": [
+          "Return",
+          "the",
+          "clothes",
+          "at",
+          "Anne",
+          "before",
+          "the",
+          "car"
+        ],
+        "explanation": "before marks order of returns."
+      },
+      {
+        "id": "kariyushi-tryon-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the better invitation.",
+        "options": [
+          "Clothes now or leave.",
+          "Would you like to try kariyushi while we complete the rental paperwork?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Would you like… while…? is a soft dual-task offer."
+      }
+    ]
+  },
+  {
+    "id": "korean-fast-start",
+    "title": "Korean inbound fast start (numbered car)",
+    "topicId": "car-inspection",
+    "grammarFocus": "Short clear instructions; Your car is number…; Please follow me",
+    "summary": "Korean inbound guests often go to a numbered car with little queue. Confirm the reservation, point to the car, still complete required checks. Useful when an English-speaking companion is present.",
+    "dialogue": [
+      {
+        "speaker": "staff",
+        "text": "Welcome. Let me confirm your reservation. Your car is number 12 — please follow me.",
+        "hints": [
+          {
+            "word": "number ticket",
+            "ja": "番号札"
+          }
+        ]
+      },
+      {
+        "speaker": "customer",
+        "text": "Do we wait in a long line?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Usually you can go straight to your numbered car. We still need a quick document check and walk-around before you leave."
+      },
+      {
+        "speaker": "staff",
+        "text": "Please follow me to car number 12."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "korean-fast-start-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the direction.",
+        "sentence": "Your car is ___ 12 — please follow me.",
+        "blanks": [
+          "number"
+        ],
+        "explanation": "number + digit identifies the assigned car."
+      },
+      {
+        "id": "korean-fast-start-mc",
+        "type": "multipleChoice",
+        "prompt": "What is the Korean inbound “fast start” pattern?",
+        "choices": [
+          "Long reception queue for every guest always",
+          "Often go to a numbered car quickly, with required checks still completed",
+          "No documents ever",
+          "Pickup only after three days"
+        ],
+        "correctIndex": 1,
+        "explanation": "Job posts: numbered-car fast start for Korean inbound."
+      },
+      {
+        "id": "korean-fast-start-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the short instruction.",
+        "words": [
+          "Please",
+          "follow",
+          "me",
+          "to",
+          "your",
+          "car"
+        ],
+        "correctOrder": [
+          "Please",
+          "follow",
+          "me",
+          "to",
+          "your",
+          "car"
+        ],
+        "explanation": "Please follow me to… is clear guide-team English."
+      },
+      {
+        "id": "korean-fast-start-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer line.",
+        "options": [
+          "Car over there maybe.",
+          "Your car is number 12. Please follow me."
+        ],
+        "correctIndex": 1,
+        "explanation": "Number + follow me removes ambiguity."
+      }
+    ]
+  },
+  {
+    "id": "phone-booking-en",
+    "title": "Phone or booking inquiry in English",
+    "topicId": "booking",
+    "grammarFocus": "Telephone English; Let me check…; confirming by repeating",
+    "summary": "Answer hours, pickup (1+ hour after landing), return (2+ hours before flight), class vs model, child seats, what to bring. Japan booking phone 098-851-4326; phone reception 09:00–17:00. Booking until 12:00 day before.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Hello, I’d like to book a car for Friday."
+      },
+      {
+        "speaker": "staff",
+        "text": "Certainly. Let me check that for you. Reservations are possible until 12:00 the day before departure. Our inquiry phone is 098-851-4326, 09:00 to 17:00.",
+        "hints": [
+          {
+            "word": "booking",
+            "ja": "予約"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "We recommend picking up one hour or more after landing, and returning at least two hours before your flight. You book a car class, not a specific model."
+      },
+      {
+        "speaker": "staff",
+        "text": "So, to confirm: Friday pickup, compact class, two adults, one child seat — is that correct?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Yes. What should we bring?"
+      },
+      {
+        "speaker": "staff",
+        "text": "Please bring the original driver’s license for every driver. Payment is completed at reservation on our Japan site."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "phone-booking-en-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the phone line.",
+        "sentence": "Let me ___ that for you.",
+        "blanks": [
+          "check"
+        ],
+        "explanation": "Let me check… buys time politely on the phone."
+      },
+      {
+        "id": "phone-booking-en-mc",
+        "type": "multipleChoice",
+        "prompt": "Japan-site booking cutoff?",
+        "choices": [
+          "Until 12:00 the day before departure",
+          "Only after landing",
+          "Anytime after return",
+          "No cutoff ever"
+        ],
+        "correctIndex": 0,
+        "explanation": "Anne booking form: until 12:00 day before."
+      },
+      {
+        "id": "phone-booking-en-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the confirmation.",
+        "words": [
+          "So",
+          "to",
+          "confirm",
+          "Friday",
+          "pickup",
+          "compact",
+          "class"
+        ],
+        "correctOrder": [
+          "So",
+          "to",
+          "confirm",
+          "Friday",
+          "pickup",
+          "compact",
+          "class"
+        ],
+        "explanation": "So, to confirm… repeats details."
+      },
+      {
+        "id": "phone-booking-en-pc",
+        "type": "politeChoice",
+        "prompt": "Choose better phone English.",
+        "options": [
+          "What? Speak.",
+          "Let me check that for you. So, to confirm, you want Friday pickup — is that right?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Check + repeat-back is standard telephone English."
+      }
+    ]
+  },
+  {
+    "id": "gas-station-redirect",
+    "title": "Explaining a cash-only or closed gas station",
+    "topicId": "fuel-return",
+    "grammarFocus": "This one is cash only / closed on…; recommendations",
+    "summary": "Redirect guests to another official nearby station. Must be regular, full, and nearby before return.",
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "The station next to us says cash only. I only have a card."
+      },
+      {
+        "speaker": "staff",
+        "text": "That is PB Irahá — it is cash only and closed on Sundays. You can also use Carenex Kanehide Ueda, which is open year-round.",
+        "hints": [
+          {
+            "word": "cash only",
+            "ja": "現金のみ"
+          }
+        ]
+      },
+      {
+        "speaker": "staff",
+        "text": "Please fill a full tank of regular gasoline near the shop, then return."
+      }
+    ],
+    "exercises": [
+      {
+        "id": "gas-station-redirect-fb",
+        "type": "fillBlank",
+        "prompt": "Complete the warning.",
+        "sentence": "This station is cash ___ and closed on Sundays.",
+        "blanks": [
+          "only"
+        ],
+        "explanation": "cash only = no cards."
+      },
+      {
+        "id": "gas-station-redirect-mc",
+        "type": "multipleChoice",
+        "prompt": "Best staff response?",
+        "choices": [
+          "Ignore fuel rules",
+          "Redirect to another listed station that accepts their payment method",
+          "Tell them to leave the tank empty",
+          "Send them to another island"
+        ],
+        "correctIndex": 1,
+        "explanation": "Recommend an alternative from the official map."
+      },
+      {
+        "id": "gas-station-redirect-so",
+        "type": "sentenceOrder",
+        "prompt": "Order the redirect.",
+        "words": [
+          "You",
+          "can",
+          "also",
+          "use",
+          "another",
+          "nearby",
+          "station"
+        ],
+        "correctOrder": [
+          "You",
+          "can",
+          "also",
+          "use",
+          "another",
+          "nearby",
+          "station"
+        ],
+        "explanation": "can also use = alternative recommendation."
+      },
+      {
+        "id": "gas-station-redirect-pc",
+        "type": "politeChoice",
+        "prompt": "Choose the clearer redirect.",
+        "options": [
+          "Closed. Problem.",
+          "This one is cash only — please use Carenex Kanehide Ueda, which is open year-round."
+        ],
+        "correctIndex": 1,
+        "explanation": "Name the problem and a concrete alternative."
+      }
+    ]
+  }
+]

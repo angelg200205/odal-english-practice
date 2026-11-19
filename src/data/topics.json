@@ -1,0 +1,68 @@
+[
+  {
+    "id": "booking",
+    "title": "Booking",
+    "blurb": "Reservations, changes, and trip planning before arrival.",
+    "order": 1
+  },
+  {
+    "id": "airport-shuttle",
+    "title": "Arrival & transfer",
+    "blurb": "Japan-site taxi to Anne (¥3,000 receipt) vs Korean-site free stop-14 shuttle; return shuttle options.",
+    "order": 2
+  },
+  {
+    "id": "counter-checkin",
+    "title": "Counter check-in & documents",
+    "blurb": "IDP, licenses, additional drivers, and check-in flow.",
+    "order": 3
+  },
+  {
+    "id": "insurance-noc",
+    "title": "Insurance & NOC",
+    "blurb": "What cover includes, what NOC means, and exclusions.",
+    "order": 4
+  },
+  {
+    "id": "free-items",
+    "title": "Free items & child seats",
+    "blurb": "ETC, loan items, and child seats under Japanese law.",
+    "order": 5
+  },
+  {
+    "id": "car-inspection",
+    "title": "Car inspection",
+    "blurb": "Walk-around, QR self check-in, and noting damage.",
+    "order": 6
+  },
+  {
+    "id": "driving-tips",
+    "title": "Driving tips",
+    "blurb": "Left-side driving, Google Maps, and ETC lane advice.",
+    "order": 7
+  },
+  {
+    "id": "fuel-return",
+    "title": "Fuel & return",
+    "blurb": "Full tank, receipts, shop return, and departure shuttles.",
+    "order": 8
+  },
+  {
+    "id": "accidents",
+    "title": "Accidents",
+    "blurb": "Scene safety, reporting, and replacement cars.",
+    "order": 9
+  },
+  {
+    "id": "cancellations",
+    "title": "Cancellations & changes",
+    "blurb": "Fees, refunds, cutoffs, and typhoon situations.",
+    "order": 10
+  },
+  {
+    "id": "special-situations",
+    "title": "Special situations",
+    "blurb": "Pets, smoking, dirty seats, lost items, and stock changes.",
+    "order": 11
+  }
+]
