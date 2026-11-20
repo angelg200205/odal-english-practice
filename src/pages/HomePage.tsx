@@ -21,6 +21,9 @@ export function HomePage() {
           <Link className="btn btn-primary" to="/practice">
             Start practice
           </Link>
+          <Link className="btn btn-ghost" to="/class">
+            Class Mode
+          </Link>
           <Link className="btn btn-ghost" to="/glossary">
             Open glossary
           </Link>

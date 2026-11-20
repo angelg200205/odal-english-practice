@@ -6,6 +6,7 @@ English grammar practice for Japanese staff at ODAL Rent-a-Car (Naha Airport / T
 
 - Vite + React + TypeScript
 - Scenarios in `src/data/scenarios.json` (teacher-editable)
+- **Class Mode** (`/class`): teacher PIN gate, pair role-play session codes, problem-customer draws
 - Japanese (日本語) hints + glossary
 - Progress saved in browser `localStorage` (no login)
 - Deployed via GitHub Actions → GitHub Pages

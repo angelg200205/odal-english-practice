@@ -54,6 +54,7 @@ export function Layout() {
               Home
             </NavLink>
             <NavLink to="/practice">Practice</NavLink>
+            <NavLink to="/class">Class Mode</NavLink>
             <NavLink to="/glossary">Glossary</NavLink>
             <NavLink to="/progress">Progress</NavLink>
           </nav>

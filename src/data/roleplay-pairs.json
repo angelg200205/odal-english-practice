@@ -1,0 +1,852 @@
+[
+  {
+    "id": "rp-taxi-reimburse",
+    "title": "Taxi arrival + reimbursement at Anne",
+    "topic": "Japan-site arrival",
+    "staff": {
+      "secret": "Guest booked on the Japanese Anne site. They arrive by taxi with a receipt for ¥2,400. Reimburse up to ¥3,000 with a receipt. Check-in is at Anne (208-2 SOUTH ZA I 1F); only the representative driver goes to the car lot afterward.",
+      "goal": "Confirm the reservation, collect the taxi receipt, explain the ¥3,000 reimbursement, and guide check-in at Anne first.",
+      "phrases": [
+        { "en": "May I have your taxi receipt, please?", "ja": "タクシーの領収書をいただけますか？" },
+        { "en": "We reimburse the taxi fare up to 3,000 yen.", "ja": "タクシー代は3,000円まで支給します。" },
+        { "en": "Please complete check-in here at Anne first.", "ja": "まずはAnneでチェックインをお願いします。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You usually use the Korean site (free shuttle), but today a Japanese friend booked on Anne. You took a taxi and have a receipt. You are confused why there was no free shuttle.",
+        "goal": "Ask why there was no free bus and whether the taxi will be reimbursed.",
+        "phrases": [
+          { "en": "Is there a free airport shuttle?", "ja": "空港からの無料送迎はありますか？" },
+          { "en": "I have the taxi receipt here.", "ja": "タクシーの領収書はここにあります。" }
+        ]
+      },
+      "japanese": {
+        "secret": "You booked on okinawa-anne.com. Taxi from the airport cost about ¥2,400. You have the receipt and want confirmation about reimbursement and where to go next.",
+        "goal": "Hand over the receipt and confirm the reimbursement and check-in steps.",
+        "phrases": [
+          { "en": "Here is my taxi receipt.", "ja": "タクシーの領収書です。" },
+          { "en": "Do I check in here or at the car lot?", "ja": "チェックインはここですか、駐車場ですか？" }
+        ]
+      },
+      "international": {
+        "secret": "English-speaking guest; a hotel helped you book on the Japanese site. Taxi was ¥2,500. You are unsure about the Anne shop vs the car lot.",
+        "goal": "Confirm reimbursement and ask where the car is.",
+        "phrases": [
+          { "en": "Can you reimburse this taxi fare?", "ja": "このタクシー代は支給されますか？" },
+          { "en": "Where is the rental car lot?", "ja": "レンタカーの駐車場はどこですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Japan-site: taxi to Anne; reimburse up to ¥3,000 with receipt; check-in at Anne; only representative driver to the lot.",
+      "customerNotes": "Korean-site guests normally use free stop-14 shuttle (not reimbursed taxi). Do not mix the two arrival rules.",
+      "listenFor": [
+        "May I have your taxi receipt",
+        "up to 3,000 yen",
+        "check-in here at Anne",
+        "representative driver / main driver"
+      ]
+    }
+  },
+  {
+    "id": "rp-stop14-shuttle",
+    "title": "Airport shuttle at stop 14 (Korean site)",
+    "topic": "Korean-site arrival",
+    "staff": {
+      "secret": "Korean-site guest at Naha Airport international. They should wait at bus stop 14 (domestic terminal area), get a wristband, and ride about 20–25 minutes. No call needed if staff are there. Max wait about 20 minutes. 08:00–09:00 arrivals must phone if no staff.",
+      "goal": "Confirm name, give wristband, explain wait/ride time, and board order.",
+      "phrases": [
+        { "en": "Please wait at bus stop 14 near the ODAL sign.", "ja": "ODALの看板がある14番バス停でお待ちください。" },
+        { "en": "Here is your wristband. Please board in order.", "ja": "リストバンドです。順番にお乗りください。" },
+        { "en": "The ride takes about 20 to 25 minutes.", "ja": "乗車時間は約20〜25分です。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You just arrived internationally. You cannot find stop 14 and worry you missed the bus. Your Kakao confirmation says ODAL shuttle.",
+        "goal": "Find the correct stop and ask how long to wait.",
+        "phrases": [
+          { "en": "Where is bus stop 14?", "ja": "14番バス停はどこですか？" },
+          { "en": "How long is the wait?", "ja": "待ち時間はどのくらいですか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "You are helping Korean friends who booked on odal.co.kr. You speak English with staff to confirm the shuttle stop.",
+        "goal": "Confirm stop 14 and wristband process for your friends.",
+        "phrases": [
+          { "en": "They booked on the Korean website.", "ja": "韓国のサイトで予約しました。" },
+          { "en": "Should they wait at stop 14?", "ja": "14番で待てばよいですか？" }
+        ]
+      },
+      "international": {
+        "secret": "You are traveling with Korean friends on an ODAL Korean-site booking. You speak English and need clear directions from international arrivals.",
+        "goal": "Get directions to stop 14 and confirm the wristband.",
+        "phrases": [
+          { "en": "We need the free ODAL shuttle.", "ja": "ODALの無料送迎が必要です。" },
+          { "en": "Do we need to call anyone?", "ja": "電話は必要ですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Korean-site: free shuttle, stop 14, wristband, ~20–25 min ride. 08:00–09:00: phone if no staff. Japan-site guests use taxi, not this shuttle.",
+      "customerNotes": "Do not tell Japan-site customers to use stop 14 as their default arrival.",
+      "listenFor": [
+        "bus stop 14",
+        "wristband",
+        "20 to 25 minutes",
+        "ODAL sign"
+      ]
+    }
+  },
+  {
+    "id": "rp-license-idp",
+    "title": "Documents at check-in (license / IDP)",
+    "topic": "Counter check-in",
+    "staff": {
+      "secret": "Every driver must be registered. Japan-site: original driver’s license required; no license in hand = no insurance/coverage. Korean/foreign guests: original IDP (Geneva) + home-country license as required. English-language Korean license alone is not accepted for driving in Japan.",
+      "goal": "Request the correct documents for this guest type and refuse rental if originals are missing.",
+      "phrases": [
+        { "en": "May I see your original driver’s license, please?", "ja": "運転免許証の原本を見せていただけますか？" },
+        { "en": "I’m afraid we cannot rent the car without the International Driving Permit.", "ja": "国際運転免許証がないとお貸しできません。" },
+        { "en": "If you do not have the license with you, insurance does not apply.", "ja": "免許を所持していないと保険・補償が適用されません。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You brought your Korean license and a photocopy of the IDP, but not the original IDP. You hope a photo on your phone is enough.",
+        "goal": "Try to check in and learn what documents are required.",
+        "phrases": [
+          { "en": "Is a photo of my IDP okay?", "ja": "国際免許の写真でも大丈夫ですか？" },
+          { "en": "I have my Korean license here.", "ja": "韓国の免許はここにあります。" }
+        ]
+      },
+      "japanese": {
+        "secret": "You are the main driver but left your license at the hotel. Your partner has their license and wants to drive instead.",
+        "goal": "Ask if your partner can drive and what is needed to register them.",
+        "phrases": [
+          { "en": "I left my license at the hotel.", "ja": "免許をホテルに置き忘れました。" },
+          { "en": "Can my partner drive instead?", "ja": "代わりにパートナーが運転できますか？" }
+        ]
+      },
+      "international": {
+        "secret": "You have a foreign license but are unsure about the IDP. You booked through a travel agent on the Japan site.",
+        "goal": "Clarify which documents you must show.",
+        "phrases": [
+          { "en": "What documents do I need to drive?", "ja": "運転に必要な書類は何ですか？" },
+          { "en": "Is an International Driving Permit required?", "ja": "国際運転免許証は必要ですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Originals required. No license in hand → no coverage / cannot rent. Additional drivers must be registered (free); on-site add needs license original or copy per Japanese guide.",
+      "customerNotes": "Do not invent alternative document rules. Soften bad news politely.",
+      "listenFor": [
+        "original",
+        "International Driving Permit",
+        "cannot rent",
+        "insurance does not apply"
+      ]
+    }
+  },
+  {
+    "id": "rp-extra-driver",
+    "title": "Registering an additional driver",
+    "topic": "Counter check-in",
+    "staff": {
+      "secret": "Additional drivers can be registered free. Every person who will drive must be registered. Unregistered drivers are not insured. On site, original or copy of the license is required to add a driver (Japanese guide).",
+      "goal": "Offer to register the second driver and collect their documents.",
+      "phrases": [
+        { "en": "Anyone who will drive must be registered.", "ja": "運転する方は全員登録が必要です。" },
+        { "en": "We can add another driver free of charge.", "ja": "追加運転者は無料で登録できます。" },
+        { "en": "May I see their license as well?", "ja": "その方の免許も見せていただけますか？" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "Your spouse will share driving. Both of you have IDP and Korean licenses. You want to know if there is a fee.",
+        "goal": "Register your spouse and confirm it is free.",
+        "phrases": [
+          { "en": "Can my spouse drive too?", "ja": "配偶者も運転できますか？" },
+          { "en": "Is there a fee to add a driver?", "ja": "運転者追加に料金はかかりますか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "Your adult child will also drive. They have their license with them. You want a quick explanation of insurance if they are not registered.",
+        "goal": "Register the second driver and understand insurance risk.",
+        "phrases": [
+          { "en": "Please add my child as a driver.", "ja": "子どもを運転者に追加してください。" },
+          { "en": "What if they drive without registration?", "ja": "未登録で運転したらどうなりますか？" }
+        ]
+      },
+      "international": {
+        "secret": "Two friends will take turns driving. Only one was named on the booking. You need English help to add the second driver.",
+        "goal": "Add the second driver before leaving.",
+        "phrases": [
+          { "en": "We both need to drive.", "ja": "二人とも運転する必要があります。" },
+          { "en": "Please register both of us.", "ja": "二人とも登録してください。" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Free additional-driver registration; unregistered = not insured; collect license docs for each driver.",
+      "customerNotes": "Keep explanation short and clear before they leave the lot.",
+      "listenFor": [
+        "must be registered",
+        "free of charge",
+        "not insured",
+        "May I see their license"
+      ]
+    }
+  },
+  {
+    "id": "rp-insurance-noc",
+    "title": "Explaining insurance and NOC",
+    "topic": "Insurance",
+    "staff": {
+      "secret": "Rental includes comprehensive insurance: bodily injury unlimited/person; property unlimited/accident; vehicle full amount/accident; personal injury up to ¥30 million/person. NOC peace-of-mind plan: would-be ¥20,000 (drivable) / ¥50,000 (tow); all customers enrolled; no self-pay when it applies. Exclusions still apply (e.g. no police report, unregistered driver).",
+      "goal": "Explain included cover and NOC briefly, and mention that some cases are not covered.",
+      "phrases": [
+        { "en": "Comprehensive insurance is included in the rental fee.", "ja": "自動車総合保険はレンタル料金に含まれています。" },
+        { "en": "The NOC peace-of-mind plan is already included.", "ja": "NOC安心プランはすでに含まれています。" },
+        { "en": "If there is no police report, insurance does not apply.", "ja": "警察への届出がないと保険・補償は適用されません。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You paid Premium NOC with your Korean-site booking and want reassurance about single-car accidents and what is still excluded.",
+        "goal": "Confirm what is covered and ask one exclusion example.",
+        "phrases": [
+          { "en": "Is NOC already paid?", "ja": "NOCは支払い済みですか？" },
+          { "en": "What is not covered?", "ja": "補償対象外は何ですか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "You worry about paying ¥20,000 or ¥50,000 after a small accident. You want a plain Japanese/English explanation of NOC安心プラン.",
+        "goal": "Understand that NOC is included and when exclusions apply.",
+        "phrases": [
+          { "en": "Do I have to pay a Non-Operation Charge?", "ja": "NOC（営業補償）を自分で払いますか？" },
+          { "en": "Please explain what is not covered.", "ja": "対象外のケースを説明してください。" }
+        ]
+      },
+      "international": {
+        "secret": "You want to know if insurance covers damage to other cars and whether you need extra insurance from a third party.",
+        "goal": "Get a clear summary of included cover.",
+        "phrases": [
+          { "en": "Is insurance included?", "ja": "保険は含まれていますか？" },
+          { "en": "Do I need extra insurance?", "ja": "追加の保険は必要ですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Insurance included with stated limits; NOC 安心プラン included (¥20k/¥50k would-be amounts); exclusions still matter. Korean Premium NOC extras: label as Korean-site unless manager confirms.",
+      "customerNotes": "Do not invent deductibles. Use Japanese fee ranges for Japan-site exclusion billing examples.",
+      "listenFor": [
+        "insurance is included",
+        "NOC",
+        "already included",
+        "police report"
+      ]
+    }
+  },
+  {
+    "id": "rp-child-seat",
+    "title": "Free child seat for under 6",
+    "topic": "Free items",
+    "staff": {
+      "secret": "Children under 6 require a child seat by Japanese law. ODAL provides child seats free. Covers are cleaned before every rental. Offer to install in a rear seat.",
+      "goal": "Confirm the child’s age, offer a free seat, and offer installation help.",
+      "phrases": [
+        { "en": "Children under six must use a child seat.", "ja": "6歳未満はチャイルドシートが必要です。" },
+        { "en": "Child seats are free at ODAL.", "ja": "ODALではチャイルドシートは無料です。" },
+        { "en": "Would you like me to install it for you?", "ja": "取り付けをお手伝いしましょうか？" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You have a 4-year-old. You booked a seat online but want to confirm it is free and already cleaned.",
+        "goal": "Confirm the free seat and ask for installation.",
+        "phrases": [
+          { "en": "Is the child seat free?", "ja": "チャイルドシートは無料ですか？" },
+          { "en": "Can you install it in the back seat?", "ja": "後ろの席に取り付けてもらえますか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "Your grandchild (age 5) is traveling with you. You forgot to request a seat at booking.",
+        "goal": "Request a free child seat now.",
+        "phrases": [
+          { "en": "We need a child seat for a five-year-old.", "ja": "5歳用のチャイルドシートが必要です。" },
+          { "en": "Can we get one today?", "ja": "本日用意できますか？" }
+        ]
+      },
+      "international": {
+        "secret": "You are unsure about Japan’s child-seat law and whether ODAL charges for seats.",
+        "goal": "Learn the rule and get a seat installed.",
+        "phrases": [
+          { "en": "Is a child seat required in Japan?", "ja": "日本ではチャイルドシートは必須ですか？" },
+          { "en": "How much does it cost?", "ja": "いくらですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Under 6: required by law; free at ODAL; cleaned covers; offer install help.",
+      "customerNotes": "Do not quote competitor prices as ODAL fees.",
+      "listenFor": [
+        "under six",
+        "child seat",
+        "free",
+        "install"
+      ]
+    }
+  },
+  {
+    "id": "rp-etc-split",
+    "title": "ETC and highway tolls (split by contract)",
+    "topic": "Driving tips",
+    "staff": {
+      "secret": "Japan-site graphic: ETC card is generally NOT in the car — use your own card or a general (non-ETC) lane. Expressway speed limit in Okinawa: 80 km/h. Korean-site ODAL: free ETC card and unlimited Okinawa expressway tolls — insert card; enter lane under 20 km/h. Confirm which contract this guest has.",
+      "goal": "Give the correct ETC/toll rule for this guest’s booking type.",
+      "phrases": [
+        { "en": "For Japan-site rentals, an ETC card is usually not provided.", "ja": "日本サイト予約では、通常ETCカードは車に入っていません。" },
+        { "en": "Please use your own ETC card or enter a general lane.", "ja": "ご自身のETCか、一般レーンをご利用ください。" },
+        { "en": "The expressway speed limit is 80 kilometers per hour.", "ja": "高速道路の最高速度は時速80キロです。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "Korean-site booking. You expect a free ETC card in the car for unlimited Okinawa tolls.",
+        "goal": "Confirm the free ETC and how to use the lane.",
+        "phrases": [
+          { "en": "Is there a free ETC card in the car?", "ja": "車に無料のETCカードは入っていますか？" },
+          { "en": "Are highway tolls included?", "ja": "高速道路料金は含まれていますか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "Japan-site booking. You do not have an ETC card and plan to use cash/general lanes.",
+        "goal": "Confirm you can use general lanes and the speed limit.",
+        "phrases": [
+          { "en": "There is no ETC card in my car, right?", "ja": "車にETCは入っていませんよね？" },
+          { "en": "Can I use the general lane?", "ja": "一般レーンを使えますか？" }
+        ]
+      },
+      "international": {
+        "secret": "You are unsure which site was used for booking and ask staff to check before explaining tolls.",
+        "goal": "Get the correct toll instructions for your contract.",
+        "phrases": [
+          { "en": "Does my reservation include ETC?", "ja": "予約にETCは含まれますか？" },
+          { "en": "What is the highway speed limit?", "ja": "高速道路の制限速度は？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Never mix Japan-site (usually no ETC) with Korean-site (free ETC + unlimited Okinawa tolls). Always confirm contract type. Speed limit 80 km/h.",
+      "customerNotes": "If unsure, check the booking source before answering.",
+      "listenFor": [
+        "ETC",
+        "general lane",
+        "80",
+        "Japan-site / Korean-site"
+      ]
+    }
+  },
+  {
+    "id": "rp-fuel-return",
+    "title": "Full tank regular gasoline at return",
+    "topic": "Fuel & return",
+    "staff": {
+      "secret": "Return with a full tank of regular gasoline (レギュラー). Nearby stations on the official map include Carenex 名嘉地 (closed Tue, self-service), PB 伊良波 (closed Sun, cash only), Carenex かねひで上田 (year-round), Carenex ファミリーSS (closed Sun). Other nearby stations OK.",
+      "goal": "Explain full-tank regular fuel and recommend a suitable station.",
+      "phrases": [
+        { "en": "Please return the car with a full tank of regular gasoline.", "ja": "レギュラー満タンでご返却ください。" },
+        { "en": "This station is cash only and closed on Sundays.", "ja": "このスタンドは現金のみで、日曜定休です。" },
+        { "en": "You can also use any nearby gas station.", "ja": "近くの他のスタンドでも大丈夫です。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You are returning tomorrow morning and want the closest station that takes cards.",
+        "goal": "Get a clear fuel instruction and station tip.",
+        "phrases": [
+          { "en": "What kind of fuel should I use?", "ja": "どの燃料を入れればいいですか？" },
+          { "en": "Which station is open tomorrow morning?", "ja": "明日の朝空いているスタンドは？" }
+        ]
+      },
+      "japanese": {
+        "secret": "You almost went to PB 伊良波 on Sunday with only a credit card.",
+        "goal": "Avoid a closed/cash-only mistake and confirm regular full tank.",
+        "phrases": [
+          { "en": "Is that station open on Sunday?", "ja": "そのスタンドは日曜営業ですか？" },
+          { "en": "Do they take credit cards?", "ja": "クレジットカードは使えますか？" }
+        ]
+      },
+      "international": {
+        "secret": "You do not know “regular” vs premium fuel in Japan.",
+        "goal": "Confirm regular gasoline and full tank.",
+        "phrases": [
+          { "en": "Do you mean regular unleaded?", "ja": "レギュラー無鉛という意味ですか？" },
+          { "en": "Must it be completely full?", "ja": "完全に満タン必須ですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Regular, full tank. Warn about cash-only / closed days on the official map. Do not invent a Japan-site per-liter surcharge (Korean-site detail only).",
+      "customerNotes": "Redirect politely if they name a closed station.",
+      "listenFor": [
+        "full tank",
+        "regular gasoline",
+        "cash only",
+        "closed on Sundays / Tuesdays"
+      ]
+    }
+  },
+  {
+    "id": "rp-return-shuttle",
+    "title": "Return shuttle to airport / Akamine / Kokusai-dori",
+    "topic": "Return",
+    "staff": {
+      "secret": "After return, free shuttle 08:00–18:00 about every 15 minutes (or 15–20) to Naha Airport or Akamine Station. Kokusai-dori course only twice daily: 15:30 and 17:00. Drop-offs (Japan graphic): 県庁前 → 美栄橋駅前 → 牧志公園前. Guests should tell staff their drop-off when they return. Car cannot be left at the airport.",
+      "goal": "Ask preferred drop-off and explain times clearly.",
+      "phrases": [
+        { "en": "Which stop would you like: the airport or Akamine Station?", "ja": "空港と赤嶺駅、どちらがよいですか？" },
+        { "en": "The Kokusai-dori shuttle leaves at 15:30 and 17:00.", "ja": "国際通りコースは15:30と17:00発です。" },
+        { "en": "Please tell us your drop-off when you return the car.", "ja": "返却時に降車場所を教えてください。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You want the 17:00 Kokusai-dori run. Korean site says 17:00 may not stop at Makishi — ask staff to confirm today’s stops.",
+        "goal": "Book the right shuttle and confirm Makishi.",
+        "phrases": [
+          { "en": "Can I take the 17:00 Kokusai-dori bus?", "ja": "17:00の国際通りバスに乗れますか？" },
+          { "en": "Does it stop at Makishi?", "ja": "牧志にも停まりますか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "Evening flight. You want the airport shuttle after return around 16:00.",
+        "goal": "Confirm airport shuttle frequency and timing.",
+        "phrases": [
+          { "en": "How often is the airport shuttle?", "ja": "空港行き送迎の間隔は？" },
+          { "en": "I need to be at the airport by 17:30.", "ja": "17:30までに空港に着きたいです。" }
+        ]
+      },
+      "international": {
+        "secret": "Hotel near Miebashi. You prefer monorail after a drop-off.",
+        "goal": "Choose Akamine or a Kokusai-dori stop.",
+        "phrases": [
+          { "en": "Can you drop us near Miebashi Station?", "ja": "美栄橋駅の近くで降されますか？" },
+          { "en": "Is the shuttle free?", "ja": "送迎は無料ですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Free return shuttle 08:00–18:00; Kokusai-dori 15:30/17:00; ask drop-off at return. Prefer Japanese drop-off list; Makishi on 17:00 is a Korean-site caveat — confirm operationally if asked.",
+      "customerNotes": "Car itself is not dropped on Kokusai-dori.",
+      "listenFor": [
+        "Which stop would you like",
+        "15:30 and 17:00",
+        "every 15 minutes",
+        "tell us your drop-off"
+      ]
+    }
+  },
+  {
+    "id": "rp-early-flight",
+    "title": "Early-morning flight — return the day before",
+    "topic": "Return timing",
+    "staff": {
+      "secret": "Recommended return at least 2 hours before departure flight (Japan booking guidance). Return possible 08:00–18:00 on the form. Early-morning flights should be returned the day before. Same-day return booking limits apply as on the form.",
+      "goal": "Advise returning the day before for an early flight and confirm shuttle timing.",
+      "phrases": [
+        { "en": "For an early-morning flight, please return the car the day before.", "ja": "早朝便の場合は前日にご返却ください。" },
+        { "en": "Please return at least two hours before your flight.", "ja": "フライトの少なくとも2時間前にご返却ください。" },
+        { "en": "Return is available from 08:00 to 18:00.", "ja": "返却は08:00〜18:00です。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "International flight around 09:00. Korean guide often says return ~2.5 hours before; you want ODAL’s advice.",
+        "goal": "Decide whether to return tonight.",
+        "phrases": [
+          { "en": "My flight is at 9 a.m. When should I return?", "ja": "便は朝9時です。いつ返却すべきですか？" },
+          { "en": "Can I return before 8 a.m.?", "ja": "朝8時前に返却できますか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "Domestic early flight. You hoped to return at 07:00.",
+        "goal": "Understand why day-before return is safer.",
+        "phrases": [
+          { "en": "Can I return at seven in the morning?", "ja": "朝7時に返却できますか？" },
+          { "en": "Should I return tonight instead?", "ja": "今夜返した方がよいですか？" }
+        ]
+      },
+      "international": {
+        "secret": "You do not want to pay for an extra hotel night but have a 08:40 flight.",
+        "goal": "Get clear timing advice without invented late-return fees.",
+        "phrases": [
+          { "en": "What is the earliest return time?", "ja": "最も早い返却時刻は？" },
+          { "en": "Is returning the day before required?", "ja": "前日返却は必須ですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Advise ≥2 hours before flight; form hours 08:00–18:00; early flights → day before. Do not invent a Japan-site late fee.",
+      "customerNotes": "Korean 2h30 recommendation can be mentioned as Korean-site guidance if relevant.",
+      "listenFor": [
+        "day before",
+        "two hours before",
+        "08:00 to 18:00",
+        "early-morning flight"
+      ]
+    }
+  },
+  {
+    "id": "rp-accident-small",
+    "title": "Small accident call — do not settle privately",
+    "topic": "Accidents",
+    "staff": {
+      "secret": "Even for a small scratch: aid injured (119), call police (110), exchange details, fill 事故報告書, call ODAL (070-3801-8558, 09:00–18:00). No police report → insurance/coverage do not apply. Do not settle privately. After hours: call insurer first, ODAL next day.",
+      "goal": "Calm the guest and give the correct step order.",
+      "phrases": [
+        { "en": "Please stay at the scene and call the police on 110.", "ja": "その場を離れず、110番してください。" },
+        { "en": "Do not settle privately with the other driver.", "ja": "相手と私的に示談しないでください。" },
+        { "en": "Please call ODAL on 070-3801-8558 between 09:00 and 18:00.", "ja": "09:00〜18:00に070-3801-8558へご連絡ください。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "Minor parking-lot scrape. The other driver offers cash to skip police. You have 24-hour Korean support on your confirmation email/Kakao.",
+        "goal": "Ask what you must do and whether to accept cash.",
+        "phrases": [
+          { "en": "The other driver wants to pay cash. Is that okay?", "ja": "相手が現金で済ませたがっています。大丈夫ですか？" },
+          { "en": "Do I still need to call the police?", "ja": "それでも警察に電話が必要ですか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "You lightly hit a pole at night after 19:00. You are unsure whether to call ODAL now.",
+        "goal": "Learn after-hours steps (insurer tonight, ODAL next day).",
+        "phrases": [
+          { "en": "It is after 18:00. Who should I call?", "ja": "18時過ぎです。どこに電話すべきですか？" },
+          { "en": "It is only a small scratch.", "ja": "小さな傷だけです。" }
+        ]
+      },
+      "international": {
+        "secret": "You are shaken after a minor collision and need English step-by-step help.",
+        "goal": "Get clear emergency instructions.",
+        "phrases": [
+          { "en": "What should I do first?", "ja": "まず何をすべきですか？" },
+          { "en": "Which number do I call for the police?", "ja": "警察は何番ですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "110 + details + accident form + ODAL 09:00–18:00. No private settlement. After hours: insurer, then ODAL next day. Korean 24h line is Korean-site support — label it.",
+      "customerNotes": "Keep tone calm; prioritize safety and police report.",
+      "listenFor": [
+        "call the police",
+        "110",
+        "Do not settle privately",
+        "09:00 and 18:00"
+      ]
+    }
+  },
+  {
+    "id": "rp-wrong-fuel",
+    "title": "Wrong fuel / key loss fee ranges",
+    "topic": "Exclusions",
+    "staff": {
+      "secret": "Japan-site billed ranges (actual cost within range): wrong fuel ¥50,000–¥90,000; lost key ¥13,000–¥30,000; wet seat/child seat ¥20,000–¥30,000; vomit ¥30,000–¥50,000. All cars non-smoking including e-cigarettes. Do not invent a Japan-site smoking yen fee.",
+      "goal": "Explain the relevant exclusion calmly with the correct yen range.",
+      "phrases": [
+        { "en": "Wrong fuel is billed at actual cost, within about 50,000 to 90,000 yen.", "ja": "給油ミスは実費請求で、およそ5〜9万円の範囲です。" },
+        { "en": "I’m sorry, but this is not covered by the standard insurance.", "ja": "申し訳ありませんが、通常の保険対象外です。" },
+        { "en": "All cars are non-smoking, including e-cigarettes.", "ja": "全車禁煙で、電子タバコも禁止です。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You may have put the wrong fuel. Korean insurance page shows higher maxima — you want to know what ODAL will charge.",
+        "goal": "Understand Japan/Korean differences without arguing numbers inventively.",
+        "phrases": [
+          { "en": "I think I used the wrong fuel.", "ja": "給油を間違えたかもしれません。" },
+          { "en": "How much will I be charged?", "ja": "いくら請求されますか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "You lost one key at the beach and are worried about the fee.",
+        "goal": "Learn the key-loss range and next steps.",
+        "phrases": [
+          { "en": "I lost the car key.", "ja": "車のキーをなくしました。" },
+          { "en": "What is the fee range?", "ja": "料金の目安は？" }
+        ]
+      },
+      "international": {
+        "secret": "Children got the child seat wet after water play. You want to know cleaning charges.",
+        "goal": "Hear the wet-seat range and apologize/arrange payment process.",
+        "phrases": [
+          { "en": "The child seat got wet.", "ja": "チャイルドシートが濡れました。" },
+          { "en": "Is that covered by insurance?", "ja": "保険でカバーされますか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Use Japanese ranges for Japan-site. Label Korean maxima if quoting Korean-site page. Soften bad news; do not invent exact final invoices.",
+      "customerNotes": "Say “actual cost within the published range.”",
+      "listenFor": [
+        "actual cost",
+        "50,000 to 90,000",
+        "not covered",
+        "non-smoking"
+      ]
+    }
+  },
+  {
+    "id": "rp-cancel-branch",
+    "title": "Cancellation rules — do not mix tables",
+    "topic": "Cancellations",
+    "staff": {
+      "secret": "Japan-site guide: free until 7 days before; 30% from 6 days before through day before; 100% on departure day; fee capped at ¥10,000 except malicious cancellations; disaster-cancelled flight = full refund (confirm with manager — wording overlaps Anne clothing). Korean-site ODAL: free until day before; same-day/no-show 50% capped at 100,000 KRW. Never mix tables.",
+      "goal": "Identify which site the guest booked and quote only that policy (or say you will confirm with a manager).",
+      "phrases": [
+        { "en": "May I confirm whether you booked on the Japanese site or the Korean site?", "ja": "日本サイトと韓国サイト、どちらで予約されましたか？" },
+        { "en": "For disaster-cancelled flights, a full refund is possible with the proper certificate.", "ja": "天災による欠航は、証明書があれば全額返金できる場合があります。" },
+        { "en": "Let me confirm the cancellation fee with a manager.", "ja": "キャンセル料は管理者に確認します。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "Korean-site booking. You want to cancel the day before departure and expect free cancellation.",
+        "goal": "Confirm free cancel until the day before (Korean rules).",
+        "phrases": [
+          { "en": "Can I cancel for free until tomorrow?", "ja": "明日まで無料キャンセルできますか？" },
+          { "en": "I booked on odal.co.kr.", "ja": "odal.co.krで予約しました。" }
+        ]
+      },
+      "japanese": {
+        "secret": "Anne booking, departure in 4 days. You want the fee percentage.",
+        "goal": "Hear Japan-site timing rules and the ¥10,000 cap caveat — staff may confirm with manager.",
+        "phrases": [
+          { "en": "I need to cancel four days before departure.", "ja": "出発4日前にキャンセルしたいです。" },
+          { "en": "What percentage is the fee?", "ja": "キャンセル料は何％ですか？" }
+        ]
+      },
+      "international": {
+        "secret": "Typhoon cancelled your flight. You have a cancellation certificate and want a full refund.",
+        "goal": "Request disaster refund process.",
+        "phrases": [
+          { "en": "My flight was cancelled because of a typhoon.", "ja": "台風で欠航になりました。" },
+          { "en": "Can I get a full refund?", "ja": "全額返金できますか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Branch by booking site. Do not mix JP vs KR tables. Disaster full refund on both with certificate. Uncertain JP %: confirm with manager.",
+      "customerNotes": "Ask which site first.",
+      "listenFor": [
+        "Japanese site or the Korean site",
+        "confirm with a manager",
+        "full refund",
+        "certificate"
+      ]
+    }
+  },
+  {
+    "id": "rp-kariyushi-parallel",
+    "title": "Kariyushi try-on while driver does paperwork",
+    "topic": "Special situations",
+    "staff": {
+      "secret": "At Anne, companions may try kariyushi wear while the representative driver does rental paperwork — saves time. Kariyushi pickup/return is at Anne, not the car lot. Return clothes at Anne before returning the car.",
+      "goal": "Offer the parallel flow politely and clarify return order.",
+      "phrases": [
+        { "en": "Would you like to try on kariyushi wear while we prepare the car papers?", "ja": "車の手続きの間にかりゆしを試着されますか？" },
+        { "en": "Please return the clothes at Anne before you return the car.", "ja": "車の返却前に、Anneで衣装を返却してください。" },
+        { "en": "Only the main driver needs to come to the car lot.", "ja": "駐車場へは運転代表者のみご案内します。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "Family of four. Kids want photos in kariyushi; you need the car quickly for a hotel check-in.",
+        "goal": "Use the parallel flow without delaying the driver.",
+        "phrases": [
+          { "en": "Can the family try clothes while I sign?", "ja": "サイン中に家族が試着できますか？" },
+          { "en": "Where do we return the clothes?", "ja": "衣装はどこで返しますか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "Couple trip. Partner wants kariyushi; you are the only driver.",
+        "goal": "Confirm try-on location and return order.",
+        "phrases": [
+          { "en": "Is the fitting here at Anne?", "ja": "試着はAnneですか？" },
+          { "en": "We return clothes before the car, correct?", "ja": "車より先に衣装返却で合っていますか？" }
+        ]
+      },
+      "international": {
+        "secret": "You did not know ODAL/Anne also rents kariyushi.",
+        "goal": "Ask what is optional vs required for the car rental.",
+        "phrases": [
+          { "en": "Is the clothing rental required?", "ja": "衣装レンタルは必須ですか？" },
+          { "en": "How does the try-on work?", "ja": "試着の流れは？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Optional kariyushi at Anne in parallel; clothes return at Anne before car; only representative driver to lot.",
+      "customerNotes": "Keep it an offer, not a hard sell.",
+      "listenFor": [
+        "while we prepare",
+        "return the clothes at Anne",
+        "before you return the car",
+        "main driver"
+      ]
+    }
+  },
+  {
+    "id": "rp-driving-tips",
+    "title": "Bus lanes and Sunday Kokusai-dori ban",
+    "topic": "Driving tips",
+    "staff": {
+      "secret": "Route 58 bus lanes: Naha→Chatan weekdays 07:30–09:00; Chatan→Naha weekdays 17:30–19:00 — violation if used then. 国際通り pedestrian zone ~1,300 m: every Sunday 12:00–18:00 general vehicles banned. Left-side driving; recommend Google Maps.",
+      "goal": "Give 2–3 high-value local driving cautions clearly.",
+      "phrases": [
+        { "en": "Please do not drive in the bus lane during morning rush hour.", "ja": "朝のラッシュ時はバスレーンに入らないでください。" },
+        { "en": "On Sundays from 12:00 to 18:00, cars cannot enter Kokusai-dori.", "ja": "日曜12:00〜18:00は国際通りに一般車は入れません。" },
+        { "en": "Please drive on the left and follow Google Maps.", "ja": "左側通行で、Googleマップに従ってください。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "Hotel on Kokusai-dori; arrival Sunday afternoon by car.",
+        "goal": "Learn about the Sunday ban and parking access.",
+        "phrases": [
+          { "en": "Can I drive to my hotel on Kokusai-dori on Sunday?", "ja": "日曜に国際通りのホテルまで車で行けますか？" },
+          { "en": "What about bus lanes?", "ja": "バスレーンはどうですか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "Driving north on Route 58 on a weekday morning.",
+        "goal": "Confirm bus-lane hours.",
+        "phrases": [
+          { "en": "When is the bus lane restricted?", "ja": "バスレーン規制は何時ですか？" },
+          { "en": "Any other local tips?", "ja": "他に地元の注意点は？" }
+        ]
+      },
+      "international": {
+        "secret": "First time driving in Japan; nervous about left side and local rules.",
+        "goal": "Get simple, calm advice.",
+        "phrases": [
+          { "en": "Any important driving rules here?", "ja": "ここでの重要な交通ルールは？" },
+          { "en": "Should I use Google Maps?", "ja": "Googleマップを使うべきですか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Bus-lane hours on Route 58; Sunday 12–18 Kokusai-dori ban; left side; Maps. Keep tips short.",
+      "customerNotes": "Do not invent fines.",
+      "listenFor": [
+        "bus lane",
+        "Sundays from 12:00 to 18:00",
+        "Kokusai-dori",
+        "left"
+      ]
+    }
+  },
+  {
+    "id": "rp-free-loan-items",
+    "title": "Free loan items at pickup",
+    "topic": "Free items",
+    "staff": {
+      "secret": "Japan-site free loan items: child seats; phone charging stand/holder with charger and cables; mini cooler + ice pack; sunshade; eco bag; sand-play set. Covers cleaned every rental. Korean site also lists unreturned-item fees and notes phone holder may not be pre-installed in W4 Alphard — label Korean-only details.",
+      "goal": "Offer useful free items and confirm what is already in the car.",
+      "phrases": [
+        { "en": "Would you like a phone holder, cooler, or sunshade? They are free.", "ja": "スマホホルダー、クーラー、サンシェードは無料です。ご利用しますか？" },
+        { "en": "We also have an eco bag and a sand-play set.", "ja": "エコバッグと砂遊びセットもあります。" },
+        { "en": "Please return the free items with the car.", "ja": "無料貸出品は車と一緒にご返却ください。" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "Beach day with kids; you want cooler, sand set, and phone charger.",
+        "goal": "Collect free items and ask about returning them.",
+        "phrases": [
+          { "en": "Can we get a cooler and a sand set?", "ja": "クーラーと砂遊びセットをもらえますか？" },
+          { "en": "Is the phone holder already installed?", "ja": "スマホホルダーは設置済みですか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "You mainly want a sunshade and eco bag for shopping.",
+        "goal": "Request items quickly.",
+        "phrases": [
+          { "en": "May I have a sunshade and an eco bag?", "ja": "サンシェードとエコバッグをください。" },
+          { "en": "Are these free to borrow?", "ja": "無料貸出ですか？" }
+        ]
+      },
+      "international": {
+        "secret": "Hot weather; you need phone charging in the car.",
+        "goal": "Get a charging stand/cables and confirm free.",
+        "phrases": [
+          { "en": "Do you have a phone charger for the car?", "ja": "車用のスマホ充電はありますか？" },
+          { "en": "What free items can we borrow?", "ja": "無料で借りられるものは？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Offer Japan-site free list. Mention return of items. Label Korean unreturned fees / Alphard note if used.",
+      "customerNotes": "Keep the offer friendly and short.",
+      "listenFor": [
+        "free",
+        "phone holder",
+        "cooler",
+        "return the free items"
+      ]
+    }
+  },
+  {
+    "id": "rp-class-vs-model",
+    "title": "Car class vs specific model",
+    "topic": "Booking / counter",
+    "staff": {
+      "secret": "Guests reserve a car class, not a specific vehicle. Cars are assigned at random within the reserved class. Japan-site classes include H (Hustler), C1 (Roomy), SUV1 (Yaris Cross), W1–W4 wagons, etc. Model years shown as 24–25 on Japan list. If stock is tight, explain and offer alternatives carefully without inventing prices.",
+      "goal": "Explain class-based assignment and set expectations about color/model.",
+      "phrases": [
+        { "en": "You reserved a car class, not a specific model or color.", "ja": "予約は車両クラスで、特定の車種・色ではありません。" },
+        { "en": "Cars are assigned at random within your class.", "ja": "クラス内でランダムに割り当てられます。" },
+        { "en": "Would you like me to check another available class?", "ja": "別の空いているクラスを確認しましょうか？" }
+      ]
+    },
+    "customers": {
+      "korean": {
+        "secret": "You wanted a white Sienta specifically and are disappointed by a different model in the same class.",
+        "goal": "Understand class rules and ask about switching class.",
+        "phrases": [
+          { "en": "I booked a Sienta. Why is this a different car?", "ja": "シエンタを予約したのに別の車なのはなぜ？" },
+          { "en": "Can I change to another class?", "ja": "別クラスに変更できますか？" }
+        ]
+      },
+      "japanese": {
+        "secret": "Family of six; you booked W2 and want confirmation of seating.",
+        "goal": "Confirm capacity expectations for the class.",
+        "phrases": [
+          { "en": "How many people can sit in this class?", "ja": "このクラスは何人乗れますか？" },
+          { "en": "Is a specific model guaranteed?", "ja": "特定車種は保証されますか？" }
+        ]
+      },
+      "international": {
+        "secret": "You care about luggage space more than the brand.",
+        "goal": "Get honest class guidance without invented specs beyond published capacities.",
+        "phrases": [
+          { "en": "We have a lot of luggage. Is this class enough?", "ja": "荷物が多いです。このクラスで足りますか？" },
+          { "en": "Can we see the car before we leave?", "ja": "出発前に車を見れますか？" }
+        ]
+      }
+    },
+    "answerKey": {
+      "staffSummary": "Class not specific car; random within class. Offer alternatives without inventing yen prices.",
+      "customerNotes": "Stay polite when guests are disappointed about color/model.",
+      "listenFor": [
+        "car class",
+        "not a specific model",
+        "at random",
+        "another available class"
+      ]
+    }
+  }
+]

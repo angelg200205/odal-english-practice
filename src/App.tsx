@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
+import { ClassModePage } from './pages/ClassModePage';
 import { GlossaryPage } from './pages/GlossaryPage';
 import { HomePage } from './pages/HomePage';
 import { PracticePage } from './pages/PracticePage';
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="scenario/:id" element={<ScenarioPage />} />
         <Route path="glossary" element={<GlossaryPage />} />
         <Route path="progress" element={<ProgressPage />} />
+        <Route path="class/*" element={<ClassModePage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

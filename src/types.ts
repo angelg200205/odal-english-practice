@@ -89,3 +89,46 @@ export interface ProgressState {
   exerciseResults: Record<string, boolean>;
   lastVisitedScenarioId?: string;
 }
+
+export type CustomerVariant = 'korean' | 'japanese' | 'international';
+
+export interface RolePhrase {
+  en: string;
+  ja: string;
+}
+
+export interface RoleCard {
+  secret: string;
+  goal: string;
+  phrases: RolePhrase[];
+}
+
+export interface RoleplayPair {
+  id: string;
+  title: string;
+  topic: string;
+  staff: RoleCard;
+  customers: Record<CustomerVariant, RoleCard>;
+  answerKey: {
+    staffSummary: string;
+    customerNotes: string;
+    listenFor: string[];
+  };
+}
+
+export type ProblemDifficulty = 'easy' | 'medium' | 'hard';
+
+export interface ProblemCustomer {
+  id: string;
+  title: string;
+  difficulty: ProblemDifficulty;
+  situation: string;
+  jaHint: string;
+  modelAnswer: string;
+  keyPhrases: string[];
+}
+
+export interface ClassConfig {
+  teacherPin: string;
+  pinNote?: string;
+}

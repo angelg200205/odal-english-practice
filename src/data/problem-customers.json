@@ -1,0 +1,316 @@
+[
+  {
+    "id": "pc-no-idp",
+    "title": "No original IDP at the counter",
+    "difficulty": "medium",
+    "situation": "A Korean guest arrives for pickup with only a phone photo of the International Driving Permit. They insist the car was already paid and demand the keys now.",
+    "jaHint": "国際免許の原本がなく、写真だけで鍵を要求してくる。すでに支払い済みだと主張。",
+    "modelAnswer": "I’m sorry, but we need the original International Driving Permit and your Korean license. A photo is not enough, so I’m afraid we cannot rent the car today. If you can bring the original, we can help you right away.",
+    "keyPhrases": [
+      "original International Driving Permit",
+      "I’m afraid we cannot rent",
+      "photo is not enough"
+    ]
+  },
+  {
+    "id": "pc-private-settle",
+    "title": "Other driver offers cash — skip police",
+    "difficulty": "hard",
+    "situation": "A guest calls after a small parking scrape. The other driver offers cash to skip calling the police. The guest is angry and wants you to approve a private settlement.",
+    "jaHint": "軽い接触事故。相手が現金示談を提案。警察を呼ばず済ませたいと強く主張。",
+    "modelAnswer": "Please do not settle privately. Even for a small accident, call the police on 110 and stay at the scene. Without a police report, insurance and coverage do not apply. Then fill in the accident report form and call ODAL.",
+    "keyPhrases": [
+      "Do not settle privately",
+      "call the police on 110",
+      "police report"
+    ]
+  },
+  {
+    "id": "pc-after-hours-accident",
+    "title": "Accident after 18:00",
+    "difficulty": "medium",
+    "situation": "It is 20:30. A Japan-site customer hit a curb. They are upset that the ODAL accident desk is closed and demand an immediate replacement car tonight.",
+    "jaHint": "20:30の縁石接触。事故窓口が閉まっていることに怒り、今夜すぐ代車を要求。",
+    "modelAnswer": "I’m sorry this happened. After 18:00, please call the insurance company explained at pickup first, then contact ODAL tomorrow. Our accident desk is 070-3801-8558 from 09:00 to 18:00. We will help with the next steps when we open.",
+    "keyPhrases": [
+      "call the insurance company",
+      "contact ODAL tomorrow",
+      "09:00 to 18:00"
+    ]
+  },
+  {
+    "id": "pc-mix-cancel-rules",
+    "title": "Mixing Japan and Korean cancel fees",
+    "difficulty": "hard",
+    "situation": "A guest who booked on the Japanese Anne site wants the Korean-site rule (free until the day before). They found a blog and are shouting that ODAL is cheating them.",
+    "jaHint": "日本サイト予約なのに、韓国サイトの「前日まで無料」を主張して怒っている。",
+    "modelAnswer": "I understand this is frustrating. Cancellation rules depend on which site you booked. For Japanese-site bookings we follow the Japanese guide, and for odal.co.kr we follow the Korean refund page. Let me confirm your booking source and check the correct fee with a manager.",
+    "keyPhrases": [
+      "depend on which site you booked",
+      "confirm your booking source",
+      "check with a manager"
+    ]
+  },
+  {
+    "id": "pc-want-free-shuttle-japan",
+    "title": "Japan-site guest demands free inbound shuttle",
+    "difficulty": "easy",
+    "situation": "A Japan-site customer at the airport is calm but confused. They expect the free stop-14 shuttle like Korean friends described.",
+    "jaHint": "日本サイト客が、韓国サイトの無料送迎（14番）を当然だと思っている。落ち着いているが混乱。",
+    "modelAnswer": "For Japanese-site reservations, please take a taxi to the Anne shop. We reimburse the taxi fare up to 3,000 yen with a receipt. The free airport shuttle at stop 14 is for Korean-site (odal.co.kr) customers.",
+    "keyPhrases": [
+      "taxi to the Anne shop",
+      "up to 3,000 yen",
+      "stop 14 is for Korean-site"
+    ]
+  },
+  {
+    "id": "pc-etc-missing-japan",
+    "title": "Angry about missing free ETC",
+    "difficulty": "medium",
+    "situation": "A Japan-site guest opens the car, finds no ETC card, and becomes upset because a Korean review promised free unlimited highway tolls.",
+    "jaHint": "日本サイト客がETCなしに怒り。韓国レビューの「高速乗り放題」を見せてくる。",
+    "modelAnswer": "I see why that is confusing. For Japan-site rentals, an ETC card is usually not provided—please use your own card or a general lane. Free ETC and unlimited Okinawa tolls apply to Korean-site ODAL cars. The expressway speed limit is 80 km/h.",
+    "keyPhrases": [
+      "usually not provided",
+      "your own card or a general lane",
+      "Korean-site ODAL"
+    ]
+  },
+  {
+    "id": "pc-early-return-0700",
+    "title": "Wants to return at 07:00 for early flight",
+    "difficulty": "easy",
+    "situation": "A guest with a 08:50 flight insists on returning the car at 07:00 tomorrow and refuses to return tonight.",
+    "jaHint": "翌朝7時返却を強く希望。今夜返却を拒否。フォーム上の返却は08:00〜。",
+    "modelAnswer": "I’m sorry, but return is available from 08:00 to 18:00. For an early-morning flight, please return the car the day before. We also recommend returning at least two hours before your flight.",
+    "keyPhrases": [
+      "08:00 to 18:00",
+      "return the car the day before",
+      "two hours before your flight"
+    ]
+  },
+  {
+    "id": "pc-leave-car-airport",
+    "title": "Wants to leave the car at the airport",
+    "difficulty": "easy",
+    "situation": "A guest running late asks to abandon the car at the terminal curb and email the location.",
+    "jaHint": "空港に車を置いて帰りたい。遅れていて慌てている。",
+    "modelAnswer": "I’m sorry, but the car must be returned at our shop. After return, please use our free shuttle to the airport between 08:00 and 18:00. It usually runs about every 15 minutes.",
+    "keyPhrases": [
+      "returned at our shop",
+      "free shuttle to the airport",
+      "every 15 minutes"
+    ]
+  },
+  {
+    "id": "pc-smoking-ecig",
+    "title": "Guest smoked an e-cigarette in the car",
+    "difficulty": "medium",
+    "situation": "At return, staff smell e-cigarette use. The guest argues that “it’s not real smoke” and refuses responsibility.",
+    "jaHint": "返却時に電子タバコ臭。本物のタバコではないと主張して責任を否定。",
+    "modelAnswer": "I’m sorry, but all cars are non-smoking, including e-cigarettes. This is not allowed. We need to check the condition and explain any cleaning charge based on the policy for your contract. Please wait a moment while we confirm.",
+    "keyPhrases": [
+      "non-smoking, including e-cigarettes",
+      "not allowed",
+      "confirm"
+    ]
+  },
+  {
+    "id": "pc-unregistered-driver",
+    "title": "Friend drove without registration",
+    "difficulty": "hard",
+    "situation": "After a minor accident, the guest admits a friend who was not registered drove the car. They are panicked and angry at “fine print.”",
+    "jaHint": "未登録の友人が運転して軽い事故。パニックで約款が悪いと言い出している。",
+    "modelAnswer": "I understand this is stressful. Anyone who drives must be registered. If an unregistered person drove, insurance and coverage may not apply. Please still call the police if you have not, stay safe, and we will explain the next steps carefully.",
+    "keyPhrases": [
+      "must be registered",
+      "may not apply",
+      "call the police"
+    ]
+  },
+  {
+    "id": "pc-wrong-fuel-charge",
+    "title": "Wrong fuel — disputes the fee range",
+    "difficulty": "hard",
+    "situation": "A guest put premium thinking it was “better,” then drained and refilled. They are furious about a possible ¥50,000–¥90,000 actual-cost bill and threaten online reviews.",
+    "jaHint": "給油ミスの実費（目安5〜9万円）に激怒し、口コミで脅している。",
+    "modelAnswer": "I’m sorry about this situation. Wrong fuel is not covered as a normal insurance case. On the Japanese policy page, the charge is actual cost within about 50,000 to 90,000 yen. I will confirm the exact amount with a manager and explain the process clearly.",
+    "keyPhrases": [
+      "not covered",
+      "actual cost",
+      "50,000 to 90,000 yen"
+    ]
+  },
+  {
+    "id": "pc-lost-key-beach",
+    "title": "Lost key at the beach",
+    "difficulty": "medium",
+    "situation": "A family lost the car key at the beach. Parents are blaming each other loudly in front of other guests.",
+    "jaHint": "ビーチで鍵紛失。他のお客様の前で夫婦喧嘩気味。",
+    "modelAnswer": "I’m sorry this happened. A lost key is billed at actual cost within about 13,000 to 30,000 yen on the Japanese policy page. Please come to the shop if you can, and we will arrange the next steps and a safe way to secure the car.",
+    "keyPhrases": [
+      "lost key",
+      "13,000 to 30,000 yen",
+      "next steps"
+    ]
+  },
+  {
+    "id": "pc-wet-child-seat",
+    "title": "Child seat soaked after water play",
+    "difficulty": "easy",
+    "situation": "Guests return a soaked child seat after a water park day and ask if insurance covers drying/cleaning.",
+    "jaHint": "水遊び後にチャイルドシートびしょ濡れ。保険で乾かせるか質問。",
+    "modelAnswer": "I’m sorry, but a seat or child seat wet from water play is not a normal covered case. On the Japanese page, the charge is actual cost within about 20,000 to 30,000 yen. We will confirm the final amount after inspection.",
+    "keyPhrases": [
+      "wet from water play",
+      "20,000 to 30,000 yen",
+      "after inspection"
+    ]
+  },
+  {
+    "id": "pc-kokusai-sunday",
+    "title": "Blocked on Kokusai-dori Sunday afternoon",
+    "difficulty": "easy",
+    "situation": "It is Sunday 14:00. A guest is stuck at a police cone on Kokusai-dori, late for hotel check-in, and demands you “fix it.”",
+    "jaHint": "日曜14時、国際通りの車両規制で入れず、ホテルに遅れそうで苛立っている。",
+    "modelAnswer": "On Sundays from 12:00 to 18:00, general vehicles cannot enter Kokusai-dori. Please park outside the pedestrian zone and walk, or ask your hotel about access. I can help you find an alternative drop-off with Google Maps.",
+    "keyPhrases": [
+      "Sundays from 12:00 to 18:00",
+      "cannot enter Kokusai-dori",
+      "alternative"
+    ]
+  },
+  {
+    "id": "pc-bus-lane-ticket",
+    "title": "Guest drove in a bus lane",
+    "difficulty": "medium",
+    "situation": "A guest may have driven in a Route 58 bus lane during weekday morning rush and calls angrily asking if ODAL will pay any fine.",
+    "jaHint": "平日朝のバスレーン走行の可能性。反則金を会社に払ってほしいと怒り。",
+    "modelAnswer": "Bus lanes on Route 58 are restricted on weekday mornings toward Chatan and weekday evenings toward Naha. Driving there during those hours is a traffic violation. ODAL cannot pay traffic fines for drivers. Please follow the police instructions if you are contacted.",
+    "keyPhrases": [
+      "bus lanes",
+      "traffic violation",
+      "cannot pay traffic fines"
+    ]
+  },
+  {
+    "id": "pc-specific-color",
+    "title": "Demands a specific white car",
+    "difficulty": "easy",
+    "situation": "A calm guest reserved a class but refuses any car that is not white. They wait at the lot and will not complete inspection.",
+    "jaHint": "クラス予約なのに白い車以外拒否。車体確認も進まない。",
+    "modelAnswer": "You reserved a car class, not a specific color or model. Cars are assigned at random within your class. I can show you today’s assigned car, and if you prefer, I can check whether another class is available.",
+    "keyPhrases": [
+      "car class, not a specific color",
+      "assigned at random",
+      "another class"
+    ]
+  },
+  {
+    "id": "pc-cash-payment",
+    "title": "Insists on paying cash at the counter",
+    "difficulty": "medium",
+    "situation": "A walk-in related inquiry wants to pay remaining amounts in cash. They become irritated when told about card-only store payment (沖楽 / on-site practice).",
+    "jaHint": "現金払いにこだわる。店舗はクレジットカードのみ（沖楽記載）と伝えたら苛立つ。",
+    "modelAnswer": "I’m sorry for the inconvenience. At the shop, payment is by credit card only—cash is not accepted. If your booking was prepaid online, please bring your confirmation and we will check whether anything else is due.",
+    "keyPhrases": [
+      "credit card only",
+      "cash is not accepted",
+      "confirmation"
+    ]
+  },
+  {
+    "id": "pc-typhoon-refund",
+    "title": "Typhoon cancelled flight — wants instant cash",
+    "difficulty": "medium",
+    "situation": "A typhoon cancelled the guest’s flight. They want cash back today and refuse to wait for the normal refund process.",
+    "jaHint": "台風欠航。今日現金で返せと要求。通常の返金手続きを拒否。",
+    "modelAnswer": "I’m sorry about your flight. For a natural-disaster cancellation, a full refund is possible with the proper certificate. After we confirm the cancellation, the refund process starts and it may take about a week to appear, depending on the payment method.",
+    "keyPhrases": [
+      "full refund",
+      "certificate",
+      "about a week"
+    ]
+  },
+  {
+    "id": "pc-stop14-no-staff",
+    "title": "No staff at stop 14 before 09:00",
+    "difficulty": "medium",
+    "situation": "A Korean-site guest landed at 08:20, waited at stop 14 with no staff, and calls sounding panicked and angry.",
+    "jaHint": "08:20到着の韓国サイト客。14番にスタッフがおらずパニック気味に電話。",
+    "modelAnswer": "Please stay near bus stop 14 by the ODAL sign. Between 08:00 and 09:00, if no staff is there, you must phone the ODAL emergency number to request the shuttle. After 09:00 you can also contact the KakaoTalk channel. The ride takes about 20 to 25 minutes.",
+    "keyPhrases": [
+      "bus stop 14",
+      "08:00 and 09:00",
+      "phone",
+      "20 to 25 minutes"
+    ]
+  },
+  {
+    "id": "pc-anne-vs-lot",
+    "title": "Lost between Anne shop and car lot",
+    "difficulty": "easy",
+    "situation": "A guest is frustrated because navigation showed different Zayasu numbers. They are at the wrong door and blame staff for “hiding the office.”",
+    "jaHint": "座安の番地が資料で違い、受付と駐車場を行き来してイライラ。",
+    "modelAnswer": "I’m sorry for the confusion. Please come to the Anne shop first at 208-2 SOUTH ZA I 1F for check-in. After that, only the representative driver is guided to the car lot nearby. Searching Google Maps for ODAL Rent-a-Car Naha Airport shop usually helps.",
+    "keyPhrases": [
+      "Anne shop first",
+      "208-2",
+      "representative driver",
+      "Google Maps"
+    ]
+  },
+  {
+    "id": "pc-noc-self-pay-fear",
+    "title": "Fears paying ¥50,000 NOC after tow",
+    "difficulty": "easy",
+    "situation": "A guest needs a tow after an accident and panics about paying a ¥50,000 Non-Operation Charge out of pocket.",
+    "jaHint": "レッカー後のNOC 5万円自己負担を恐れている。安心プランの説明が必要。",
+    "modelAnswer": "Please don’t worry about that part first—stay safe and follow the accident steps. The NOC peace-of-mind plan is already included for ODAL customers, so there is no self-pay for that NOC amount when the plan applies. Some cases are still not covered, so we will confirm the details.",
+    "keyPhrases": [
+      "NOC peace-of-mind plan",
+      "already included",
+      "no self-pay"
+    ]
+  },
+  {
+    "id": "pc-makishi-1700",
+    "title": "17:00 shuttle — Makishi stop dispute",
+    "difficulty": "medium",
+    "situation": "A Korean-site guest insists the 17:00 Kokusai-dori bus must stop at Makishi because “the Japanese flyer lists it.” They are upset at the curb.",
+    "jaHint": "17:00国際通りバスで牧志停車を主張。韓国サイトでは17:00は牧志非停車の記載あり。",
+    "modelAnswer": "The Kokusai-dori shuttle leaves at 15:30 and 17:00. The Japanese guide lists Kenchomae, Miebashi, and Makishi as drop-offs. Some Korean-site notes say the 17:00 run may not stop at Makishi. Let me confirm today’s stops with the return team right now.",
+    "keyPhrases": [
+      "15:30 and 17:00",
+      "confirm today’s stops",
+      "Makishi"
+    ]
+  },
+  {
+    "id": "pc-same-day-booking",
+    "title": "Demands same-day rental",
+    "difficulty": "easy",
+    "situation": "A walk-up guest wants a car today. They say other shops allow same-day booking and call ODAL inconvenient.",
+    "jaHint": "当日レンタル希望。他社はできるのに不便だと不満。",
+    "modelAnswer": "I’m sorry, but same-day rental and same-day return cannot be booked on our Japanese reservation form. Reservations are possible until 12:00 on the day before departure. I can help you look at tomorrow’s options.",
+    "keyPhrases": [
+      "same-day rental",
+      "cannot be booked",
+      "12:00 on the day before"
+    ]
+  },
+  {
+    "id": "pc-island-drive",
+    "title": "Plans to take the car to another island by ferry",
+    "difficulty": "hard",
+    "situation": "A guest angrily announces they will ferry the car to another island not connected by bridge. They say “insurance is included so it’s fine.”",
+    "jaHint": "橋でつながっていない別の島へフェリーで車を持ち込むつもり。保険があるから大丈夫だと主張。",
+    "modelAnswer": "I’m sorry, but driving on islands other than Okinawa main island—except islands connected by a bridge—is not covered. Please keep the car on the main island or bridge-connected islands only. If you go elsewhere, exclusions can apply.",
+    "keyPhrases": [
+      "islands other than Okinawa main island",
+      "connected by a bridge",
+      "not covered"
+    ]
+  }
+]
